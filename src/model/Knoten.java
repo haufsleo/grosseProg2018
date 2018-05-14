@@ -2,6 +2,11 @@ package model;
 
 import java.util.ArrayList;
 
+/**
+ * 
+ * @author M. Leonard Haufs Prüflingsnummer: 101-20540
+ *
+ */
 public class Knoten {
 	
 	private int vorgangsnummer;
@@ -10,7 +15,7 @@ public class Knoten {
 	private int faz;
 	private int fez;
 	private int dauer;
-	private int pg;
+	private int gp;
 	private int fp;
 	private int saz;
 	private int sez;
@@ -52,11 +57,11 @@ public class Knoten {
 	public void setDauer(int dauer) {
 		this.dauer = dauer;
 	}
-	public int getPg() {
-		return pg;
+	public int getGp() {
+		return gp;
 	}
-	public void setPg(int pg) {
-		this.pg = pg;
+	public void setGp(int gp) {
+		this.gp = gp;
 	}
 	public int getFp() {
 		return fp;
@@ -100,9 +105,7 @@ public class Knoten {
 	public void setNachfolgerNummern(ArrayList<Integer> nachfolgerNummern) {
 		this.nachfolgerNummern = nachfolgerNummern;
 	}
-	
-	
-	
+		
 	// Konstruktor
 	public Knoten(int vorgangsnummer, String vorgangsbezeichnung, int dauer, ArrayList<Integer> vorgaengerNummern, ArrayList<Integer> nachfolgerNummern) {
 		super();
@@ -116,11 +119,4 @@ public class Knoten {
 		this.vorgaenger = new ArrayList<>();
 		this.nachfolger = new ArrayList<>();
 	}
-
-	
-	
-	
-	
-	
-	
 }

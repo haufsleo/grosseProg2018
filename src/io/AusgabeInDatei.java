@@ -6,6 +6,11 @@ import java.io.IOException;
 
 import model.Model;
 
+/**
+ * 
+ * @author M. Leonard Haufs Prüflingsnummer: 101-20540
+ *
+ */
 public class AusgabeInDatei extends Ausgabe {
 
 	public AusgabeInDatei(Model model) {

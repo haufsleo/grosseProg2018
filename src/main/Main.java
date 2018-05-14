@@ -3,10 +3,15 @@ package main;
 import java.io.File;
 import java.io.IOException;
 
+import controller.Controller;
 import io.AusgabeInDatei;
 import io.LeseAusDatei;
 import model.Model;
 
+/**
+ * @author M. Leonard Haufs Prüflingsnummer: 101-20540
+ *
+ */
 public class Main {
 	public static void main(String[] args) {
 		String dateiendung;
@@ -55,7 +60,8 @@ public class Main {
 								Model model = in.getModelAusDatei(dateien[i]);
 
 								// Berechnung
-								// TODO Berechnung mit Controller
+								Controller c = new Controller(model);
+								c.calculate();
 								
 								// Ausgabe
 								AusgabeInDatei out = new AusgabeInDatei(model);

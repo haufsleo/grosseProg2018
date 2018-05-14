@@ -11,6 +11,11 @@ import java.util.ArrayList;
 import model.Knoten;
 import model.Model;
 
+/**
+ * 
+ * @author M. Leonard Haufs Prüflingsnummer: 101-20540
+ *
+ */
 public class LeseAusDatei {
 	public Model getModelAusDatei(File file) {
 		ArrayList<Knoten> knoten = new ArrayList<>();
