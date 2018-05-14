@@ -18,7 +18,7 @@ public class Main {
 		String verzeichnis;
 
 		// Nur zum Testen- wird später aus über die Argumente args der Jar
-		// übergeben
+		// übergeben 
 		args = new String[2];
 		args[0] = ".in";
 		args[1] = "/Users/hfs23/Dropbox/MATSE/GrosseProg/2018_GrosseProg_Martin_Leonard_Haufs/Testfaelle";
