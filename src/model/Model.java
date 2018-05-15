@@ -61,10 +61,13 @@ public class Model {
 
 		this.startknoten = new ArrayList<>();
 		this.endknoten = new ArrayList<>();
+		
+		this.kritischePfade = new ArrayList<>();
+		
 	}
 
 	public Model(ArrayList<Knoten> knoten, String name) {
-		super();
+		this();
 		this.knoten = knoten;
 		this.name = name;
 

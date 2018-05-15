@@ -33,9 +33,10 @@ public class LeseAusDatei {
 			String aktZeile = "";
 			while ((aktZeile = br.readLine()) != null) {
 				if (aktZeile.startsWith("//")) {
-					if (aktZeile.startsWith("//+")) {
-						if (aktZeile.length() > 3) {
-							kommentar = aktZeile.substring(3, aktZeile.length());
+					// Zeile beginnt mit "//+ " ?
+					if (aktZeile.startsWith("//+ ")) {
+						if (aktZeile.length() > 4) {
+							kommentar = aktZeile.substring(4, aktZeile.length());
 						}
 						continue;
 					}
