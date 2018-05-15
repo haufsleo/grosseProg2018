@@ -43,8 +43,8 @@ public class LeseAusDatei {
 					continue;
 				}
 
-				aktZeile = aktZeile.replace(" ", ""); // TODO fix
-				String[] zeileSplitBySemicolon = aktZeile.split(";");
+				String aktZeileOhneLeer = aktZeile.replace(" ", ""); // TODO fix
+				String[] zeileSplitBySemicolon = aktZeileOhneLeer.split(";");
 				if (zeileSplitBySemicolon.length != 5) {
 					System.out.println(
 							"Ungültige Eingabe. Es müssen je Zeile genau 5 Argumente getrennt mit einem Semikolon übergeben werden: "
@@ -53,7 +53,7 @@ public class LeseAusDatei {
 					return new Model();
 				}
 					int nr = Integer.parseInt(zeileSplitBySemicolon[0]);
-					String beschr = zeileSplitBySemicolon[1];
+					String beschr = aktZeile.split("; ")[1];
 					int dauer = Integer.parseInt(zeileSplitBySemicolon[2]);
  
 					ArrayList<Integer> vorgaengerNummern = new ArrayList<>();					

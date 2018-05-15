@@ -17,7 +17,7 @@ public class Model {
 
 	private ArrayList<ArrayList<Knoten>> kritischePfade;
 	private ArrayList<Knoten> zyklus;
-
+	private boolean isZusammenhaengend; 
 	
 
 	private String name;
@@ -28,6 +28,14 @@ public class Model {
 
 	public void initialize() {
 		this.initialized = true;
+	}
+
+	public boolean isZusammenhaengend() {
+		return isZusammenhaengend;
+	}
+
+	public void setZusammenhaengend(boolean isZusammenhaengend) {
+		this.isZusammenhaengend = isZusammenhaengend;
 	}
 
 	// Getter und Setter

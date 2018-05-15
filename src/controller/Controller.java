@@ -6,6 +6,7 @@ import model.Knoten;
 import model.Model;
 
 /**
+ * Hauptberechnungsklasse.
  * 
  * @author M. Leonard Haufs Prüflingsnummer: 101-20540
  *
@@ -35,7 +36,10 @@ public class Controller {
 		boolean isZusammenhaengend = this.isZusammenhaengend();
 		if (!isZusammenhaengend) {
 			System.out.println("Nicht zusammenhängend");
+			model.setZusammenhaengend(false);
 			return;
+		}else {
+			model.setZusammenhaengend(true);
 		}
 
 		// Initialisiere das Model
@@ -68,20 +72,35 @@ public class Controller {
 		return true;
 	}
 
+	/**
+	 * Hilfsfunktion zur Überprüfung, ob keine Zyklen existieren
+	 * 
+	 * @param aktKnoten
+	 * @return
+	 */
 	private boolean hatKeineZyklenHelper(Knoten aktKnoten) {
+		// Abbruchbedingung
 		if (this.validationsListe.contains(aktKnoten)) {
+			// Falls aktueller Knoten bereits in ValidationListe enthaöten ist, füge
+			// aktuellen Knoten zu ValidationListe zu und gebe false zurück
 			this.validationsListe.add(aktKnoten);
 			return false;
 		}
+		// Füge aktuellen Knoten zur Validationliste hinzu
 		this.validationsListe.add(aktKnoten);
-
+		// Für jeden nachfolger des aktuellen Knotens führe rekursiv
+		// hatKeineZyklenHelper aus und gebe den Wert zurück.
 		for (Knoten nachfolger : aktKnoten.getNachfolger()) {
-			
 			return this.hatKeineZyklenHelper(nachfolger);
 		}
 		return true;
 	}
-	
+
+	/**
+	 * Prüft, ob der Netzplan zusammenhängend ist.
+	 * 
+	 * @return true, falls der Netzplan zusammenhängend ist, sonst false
+	 */
 	private boolean isZusammenhaengend() {
 		this.validationsListe = new ArrayList<>();
 
@@ -95,10 +114,19 @@ public class Controller {
 		}
 	}
 
+	/**
+	 * Helper-Funktion zur Bestimmung, ob der Netzplan zusammnhängend ist
+	 * 
+	 * @param aktKnoten
+	 *            aktuell betrachteter Knoten
+	 */
 	private void isZusammenhaengendHelper(Knoten aktKnoten) {
+		// Falls die ValidationListe den aktuellen Knoten noch nicht enthällt, füge
+		// diesen ein.
 		if (!this.validationsListe.contains(aktKnoten)) {
 			this.validationsListe.add(aktKnoten);
 		}
+		// rufe isZusammenhaengendHelper für jeden Nachfolger des aktuellen Knotens auf
 		for (Knoten nachfolger : aktKnoten.getNachfolger()) {
 			isZusammenhaengendHelper(nachfolger);
 		}
@@ -124,6 +152,7 @@ public class Controller {
 	 * berechnet, sowie der freie Puffer (FP).
 	 */
 	private void initModel() {
+		// Prüfe, ob das Model bereits initialisiert wurde
 		if (this.model.isInitialized()) {
 			return;
 		}

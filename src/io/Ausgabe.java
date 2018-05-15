@@ -13,11 +13,22 @@ import model.Model;
 public abstract class Ausgabe {
 	private Model model;
 
+	/**
+	 * Konstruktor, der Ausgabe mit einem Model initialisiert
+	 * 
+	 * @param model
+	 *            model, welches die auszugebenen Daten enthällt
+	 */
 	public Ausgabe(Model model) {
 		super();
 		this.model = model;
 	}
 
+	/**
+	 * Gibt den Ausgabestring zurück
+	 * 
+	 * @return Ausgabestring
+	 */
 	protected String getAusgabeString() {
 		StringBuilder sb = new StringBuilder();
 
@@ -25,8 +36,13 @@ public abstract class Ausgabe {
 		sb.append("\n");
 		sb.append("\n");
 
-		if (this.model.getZyklus().size() != 0) {
+		if(!this.model.isZusammenhaengend()) {
 			sb.append("Berechnung nicht möglich.");
+			sb.append("\n");
+			sb.append("Nicht zusammenhängend.");
+		}else if (this.model.getZyklus().size() != 0) {
+			sb.append("Berechnung nicht möglich.");
+			sb.append("\n");
 			sb.append("Zyklus erkannt: ");
 			this.getZyklusString(sb);
 		} else {
@@ -34,7 +50,7 @@ public abstract class Ausgabe {
 			sb.append("\n");
 			this.getKnotenbeschreibung(sb);
 			sb.append("\n");
-			this.getAnfangsvorgangString(sb);
+			this.getVorgangString(sb);
 			sb.append("\n");
 			sb.append("Gesamtdauer: ");
 			sb.append(this.getGesamtdauer());
@@ -46,6 +62,13 @@ public abstract class Ausgabe {
 		return sb.toString();
 	}
 
+	/**
+	 * Gibt die Beschreibung eines Knotens im Netzplan. Dabei wird der übergebene
+	 * StringBuilder verändert.
+	 * 
+	 * @param sb
+	 *            Stringbuilder, an den die Beschreibung angehängt werden soll
+	 */
 	private void getKnotenbeschreibung(StringBuilder sb) {
 		for (Knoten knoten : model.getKnoten()) {
 			sb.append(knoten.getVorgangsnummer());
@@ -69,7 +92,14 @@ public abstract class Ausgabe {
 		}
 	}
 
-	private void getAnfangsvorgangString(StringBuilder sb) {
+	/**
+	 * Gibt die Beschreibung von Anfangs- und Endvorgang zurück
+	 * 
+	 * @param sb
+	 *            Stringbuilder, an den die Beschreibung von Anfangs- und Endvorgang
+	 *            angehängt werden soll
+	 */
+	private void getVorgangString(StringBuilder sb) {
 		sb.append("Anfangsvorgang: ");
 		for (int i = 0; i < model.getStartknoten().size(); i++) {
 			Knoten startK = model.getStartknoten().get(i);
@@ -91,6 +121,13 @@ public abstract class Ausgabe {
 		}
 	}
 
+	/**
+	 * Gibt die Gesamtdauer des kritischen Pfades zurück. Sind mehrere Kritische
+	 * Pfade enthalten, so wird "Nicht eindeutig" zurückgegeben
+	 * 
+	 * @return Gesamtdauer des kritischen Pfades. Sind mehrere Kritische Pfade
+	 *         enthalten, so wird "Nicht eindeutig" zurückgegeben
+	 */
 	private String getGesamtdauer() {
 		if (this.model.getKritischePfade().size() == 0) {
 			return 0 + "";
@@ -107,9 +144,17 @@ public abstract class Ausgabe {
 		return gesamtdauer + "";
 	}
 
+	/**
+	 * Hängt die String- Repräsentation des/der Kritischen Pfade(s) an einen
+	 * übergebenen Stringbuilder an
+	 * 
+	 * @param sb
+	 *            StringBuilder, an den die String- Repräsentation des/der
+	 *            Kritischen Pfade(s) angehängt werden soll
+	 */
 	private void getKritischerPfadString(StringBuilder sb) {
 		if (this.model.getKritischePfade().size() > 1) {
-			sb.append("Kritische(r) Pfad");
+			sb.append("Kritische Pfade");
 		} else {
 			sb.append("Kritischer Pfad");
 		}
@@ -126,10 +171,18 @@ public abstract class Ausgabe {
 			sb.append("\n");
 		}
 	}
-	
+
+	/**
+	 * Hängt die String- Repräsentation eines Zyklus an einen übergebenen
+	 * Stringbuilder an
+	 * 
+	 * @param sb
+	 *            StringBuilder, an den die String- Repräsentation des/der Zyklus
+	 *            angehängt werden soll
+	 */
 	private void getZyklusString(StringBuilder sb) {
 		int posDerErstenWiederholung = this.posDerErstenWiederholung(this.model.getZyklus());
-		
+
 		for (int i = posDerErstenWiederholung; i < this.model.getZyklus().size(); i++) {
 			Knoten knoten = this.model.getZyklus().get(i);
 			sb.append(knoten.getVorgangsnummer());
@@ -139,18 +192,26 @@ public abstract class Ausgabe {
 		}
 		sb.append("\n");
 	}
-	
 
+	/**
+	 * Gibt die Position des ersten Elementes in einer ArrayList von Knoten zurück,
+	 * die doppelt vorkommt
+	 * 
+	 * @param knoten
+	 *            ArrayList<Knoten>, die überprüft werden soll
+	 * @return Position des ersten Elementes in einer ArrayList von Knoten, die
+	 *         doppelt vorkommt
+	 */
 	private int posDerErstenWiederholung(ArrayList<Knoten> knoten) {
-		ArrayList<Knoten> ks= new ArrayList<>();
+		ArrayList<Knoten> ks = new ArrayList<>();
 		for (int i = 0; i < knoten.size(); i++) {
 			Knoten k = knoten.get(i);
-			if(ks.contains(k)) {
+			if (ks.contains(k)) {
 				return ks.indexOf(k);
 			}
 			ks.add(k);
 		}
 		return 0;
 	}
-	
+
 }
