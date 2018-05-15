@@ -43,7 +43,7 @@ public class LeseAusDatei {
 					continue;
 				}
 
-				aktZeile = aktZeile.replace(" ", "");
+				aktZeile = aktZeile.replace(" ", ""); // TODO fix
 				String[] zeileSplitBySemicolon = aktZeile.split(";");
 				if (zeileSplitBySemicolon.length != 5) {
 					System.out.println(
@@ -55,7 +55,7 @@ public class LeseAusDatei {
 					int nr = Integer.parseInt(zeileSplitBySemicolon[0]);
 					String beschr = zeileSplitBySemicolon[1];
 					int dauer = Integer.parseInt(zeileSplitBySemicolon[2]);
-
+ 
 					ArrayList<Integer> vorgaengerNummern = new ArrayList<>();					
 					if(!zeileSplitBySemicolon[3].equals("-")) {
 						String[] vorgaengerNummernArr = zeileSplitBySemicolon[3].split(",");
