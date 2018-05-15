@@ -24,16 +24,15 @@ public class Controller {
 	 * 
 	 */
 	public void calculate() {
-		boolean hatKeineZyklen = this.hatKeineZyklen();
-		boolean isZusammenhaengend = this.isZusammenhaengend();
-
 		// Prüfe, ob der im Model gekapselte Netzplan keine Zyklen enthällt
+		boolean hatKeineZyklen = this.hatKeineZyklen();
 		if (!hatKeineZyklen) {
 			System.out.println("Zyklen enthalten");
 			return;
 		}
 
 		// Prüfe, ob der im Model gekapselte Netzplan zusammenhängend ist
+		boolean isZusammenhaengend = this.isZusammenhaengend();
 		if (!isZusammenhaengend) {
 			System.out.println("Nicht zusammenhängend");
 			return;
@@ -61,7 +60,8 @@ public class Controller {
 		for (Knoten s : this.model.getStartknoten()) {
 			this.validationsListe = new ArrayList<>();
 			check.add(hatKeineZyklenHelper(s));
-			if (check.contains(false)) {
+			if (check.contains(Boolean.valueOf(false))) {
+				model.setZyklus(this.validationsListe);
 				return false;
 			}
 		}
@@ -70,22 +70,18 @@ public class Controller {
 
 	private boolean hatKeineZyklenHelper(Knoten aktKnoten) {
 		if (this.validationsListe.contains(aktKnoten)) {
+			this.validationsListe.add(aktKnoten);
 			return false;
 		}
-		if (aktKnoten.getNachfolger().size() > 0) {
-			ArrayList<Boolean> check = new ArrayList<>();
-			for (Knoten nachfolger : aktKnoten.getNachfolger()) {
-				check.add(this.hatKeineZyklenHelper(nachfolger));
-				if (check.contains(false)) {
-					return false;
-				}
-			}
-		} else {
-			return true;
+		this.validationsListe.add(aktKnoten);
+
+		for (Knoten nachfolger : aktKnoten.getNachfolger()) {
+			
+			return this.hatKeineZyklenHelper(nachfolger);
 		}
 		return true;
 	}
-
+	
 	private boolean isZusammenhaengend() {
 		this.validationsListe = new ArrayList<>();
 
@@ -232,6 +228,13 @@ public class Controller {
 	 *            aktuell betrachteter Knoten
 	 */
 	private void setSazAndSez(Knoten aktKnoten) {
+		// Wenn aktueller Knoten ein Anfangsknoten ist, so wird Sez als minimaler SAZ
+		// der Nachfolger gesetzt
+		if (aktKnoten.getVorgaenger().size() == 0) {
+			aktKnoten.setSez(this.getMinSazOfNachfolger(aktKnoten));
+		}
+
+		// SAZ = SEZ – Dauer.
 		aktKnoten.setSaz(aktKnoten.getSez() - aktKnoten.getDauer());
 
 		for (Knoten vorgaenger : aktKnoten.getVorgaenger()) {
@@ -241,8 +244,8 @@ public class Controller {
 			 * Haben mehrere Vorgänge einen gemeinsamen Vorgänger, so ist dessen SEZ der
 			 * früheste (kleinste) SAZ aller Nachfolger.
 			 */
-			vorgaenger.setSez(this.getMinSazOfNachfolger(aktKnoten));
 
+			vorgaenger.setSez(this.getMinSazOfNachfolger(vorgaenger));
 			// Rufe setSazAndSez rekursiv fpr alle vorgänger vom aktuellen Knoten auf
 			setSazAndSez(vorgaenger);
 		}
@@ -382,12 +385,13 @@ public class Controller {
 	 * kritischePfade
 	 */
 	private void setKritischePfade() {
+		this.model.setKritischePfade(new ArrayList<>());
 		/*
 		 * Bestimmung der kritischen Vorgänge ausgehend von jedem Startknoten
 		 */
 		for (Knoten startK : this.model.getStartknoten()) {
 			ArrayList<Knoten> pfad = new ArrayList<>();
-			setKritischePfadehelper(pfad, startK);
+			setKritischePfadeHelper(pfad, startK);
 		}
 	}
 
@@ -401,11 +405,13 @@ public class Controller {
 	 * @param aktKnoten
 	 *            aktuell betrachteter Knoten
 	 */
-	private void setKritischePfadehelper(ArrayList<Knoten> pfad, Knoten aktKnoten) {
+	private void setKritischePfadeHelper(ArrayList<Knoten> pfad, Knoten aktKnoten) {
 		/*
 		 * Abbruchkriterium:Endknoten ist erreicht
 		 */
 		if (aktKnoten.getNachfolger().size() == 0) {
+			// Füge aktuellen Knoten in pfad ein
+			pfad.add(aktKnoten);
 			// Erstell Kopie des kritischen Pfades
 			@SuppressWarnings("unchecked")
 			ArrayList<Knoten> pfadKopie = (ArrayList<Knoten>) pfad.clone();
@@ -420,14 +426,17 @@ public class Controller {
 		 */
 		if (aktKnoten.getGp() == 0 && aktKnoten.getFp() == 0) {
 			// füge aktuellen Knoten zum kritischen Pfad hinzu
-			pfad.add(aktKnoten);
+			// pfad.add(aktKnoten);
+			@SuppressWarnings("unchecked")
+			ArrayList<Knoten> pfadKopie = (ArrayList<Knoten>) pfad.clone();
+			pfadKopie.add(aktKnoten);
 			// Führe für alle Nachfolger rekursiv die Methode setKritischePfadehelper aus
 			// und durchlaufe so nach Backtraking den virtuellen Baum
 			for (Knoten nachfolger : aktKnoten.getNachfolger()) {
-				this.setKritischePfadehelper(pfad, nachfolger);
+				this.setKritischePfadeHelper(pfadKopie, nachfolger);
 			}
-			// Entferne den zuletzt hinzugefügten Knoten aus dem Pfad-Array
-			pfad.remove(pfad.size() - 1);
+			// // Entferne den zuletzt hinzugefügten Knoten aus dem Pfad-Array
+			// pfad.remove(pfad.size() - 1);
 		}
 	}
 }

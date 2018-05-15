@@ -16,6 +16,9 @@ public class Model {
 	private ArrayList<Knoten> knoten;
 
 	private ArrayList<ArrayList<Knoten>> kritischePfade;
+	private ArrayList<Knoten> zyklus;
+
+	
 
 	private String name;
 
@@ -36,6 +39,14 @@ public class Model {
 		this.kritischePfade = kritischePfade;
 	}
 
+	public ArrayList<Knoten> getZyklus() {
+		return zyklus;
+	}
+
+	public void setZyklus(ArrayList<Knoten> zyklus) {
+		this.zyklus = zyklus;
+	}
+	
 	public ArrayList<Knoten> getStartknoten() {
 		return startknoten;
 	}
@@ -63,6 +74,7 @@ public class Model {
 		this.endknoten = new ArrayList<>();
 		
 		this.kritischePfade = new ArrayList<>();
+		this.zyklus = new ArrayList<>();
 		
 	}
 
