@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root text="&#34;isZusammenhaengend(): boolean&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;Initialisiere validationsListe des Controllers als neue Liste von Knoten&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<for text="&#34;Für jeden Knoten startK in model.startknoten:&#34;" comment="&#34;&#34;" color="ffffff">
+			<qFor>
+				<call text="&#34;isZusammenhaengendHelper(startK)&#34;" comment="&#34;&#34;" color="ffffff"></call>
+			</qFor>
+		</for>
+		<alternative text="&#34;Länge der validationsliste gleich Länge von model.knoten&#34;" comment="&#34;&#34;" color="ffffff">
+			<qTrue>
+				<jump text="&#34;Return true&#34;" comment="&#34;&#34;" color="ffffff"></jump>
+			</qTrue>
+			<qFalse>
+				<jump text="&#34;Return false&#34;" comment="&#34;&#34;" color="ffffff"></jump>
+			</qFalse>
+		</alternative>
+	</children>
+</root>

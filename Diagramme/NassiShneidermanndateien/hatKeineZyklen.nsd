@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root text="&#34;hatKeineZyklen(): boolean&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;Initialisiere neue Liste von Boolean check als leere Liste&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<for text="&#34;Für jeden Knoten s in model.startknoten:&#34;" comment="&#34;&#34;" color="ffffff">
+			<qFor>
+				<instruction text="&#34;Initialisiere validierungsListe im Attribut des Controllers&#34;,&#34;als neue Liste von Knoten&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+				<call text="&#34;Füge zu check hatKeineZyklen(s) hinzu&#34;" comment="&#34;&#34;" color="ffffff"></call>
+				<alternative text="&#34;Check enthält false ?&#34;" comment="&#34;&#34;" color="ffffff">
+					<qTrue>
+						<instruction text="&#34;Setze model.zyklus auf validationsListe&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+						<jump text="&#34;Return false&#34;" comment="&#34;&#34;" color="ffffff"></jump>
+					</qTrue>
+					<qFalse>
+					</qFalse>
+				</alternative>
+			</qFor>
+		</for>
+		<jump text="&#34;Return true&#34;" comment="&#34;&#34;" color="ffffff"></jump>
+	</children>
+</root>

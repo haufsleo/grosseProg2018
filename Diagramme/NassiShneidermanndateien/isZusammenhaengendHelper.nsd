@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root text="&#34;isZusammenhaengendHelper(Knoten aktKnoten): void&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<alternative text="&#34;validationListe enthält aktKnoten&#34;" comment="&#34;&#34;" color="ffffff">
+			<qTrue>
+			</qTrue>
+			<qFalse>
+				<instruction text="&#34;Füge aktKnoten zu validationListe hinzu&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+			</qFalse>
+		</alternative>
+		<for text="&#34;Für jeden Knoten nachfolger in aktKnoten.nachfolger&#34;" comment="&#34;&#34;" color="ffffff">
+			<qFor>
+				<call text="&#34;isZusammenhaengendHelper(nachfolger)&#34;" comment="&#34;&#34;" color="ffffff"></call>
+			</qFor>
+		</for>
+	</children>
+</root>

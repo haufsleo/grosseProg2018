@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root text="&#34;initModel(): void&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<alternative text="&#34;model.isInitialized gleich true&#34;" comment="&#34;&#34;" color="ffffff">
+			<qTrue>
+				<jump text="&#34;Abbruch der Methode&#34;" comment="&#34;&#34;" color="ffffff"></jump>
+			</qTrue>
+			<qFalse>
+			</qFalse>
+		</alternative>
+		<for text="&#34;Für jeden Knoten startK in model.startKnoten&#34;" comment="&#34;&#34;" color="ffffff">
+			<qFor>
+				<instruction text="&#34;setze faz in startK auf 0&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+			</qFor>
+		</for>
+		<for text="&#34;Für jeden Knoten startK in model.startknoten&#34;" comment="" color="ffffff">
+			<qFor>
+				<call text="&#34;setFezAndFaz(startK)&#34;" comment="&#34;&#34;" color="ffffff"></call>
+			</qFor>
+		</for>
+		<for text="&#34;Für jeden Knoten endK in model.endKnoten&#34;" comment="&#34;&#34;" color="ffffff">
+			<qFor>
+				<instruction text="&#34;Setze sez von endK auf endK.fez&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+			</qFor>
+		</for>
+		<for text="&#34;Für jeden Knoten endK in model.endKnoten&#34;" comment="" color="ffffff">
+			<qFor>
+				<call text="&#34;setSazAndSez(endKnoten)&#34;" comment="&#34;&#34;" color="ffffff"></call>
+			</qFor>
+		</for>
+		<for text="&#34;Für jeden Knoten startK in model.startKnoten&#34;" comment="&#34;&#34;" color="ffffff">
+			<qFor>
+				<call text="&#34;setGp(startK)&#34;" comment="&#34;&#34;" color="ffffff"></call>
+				<call text="&#34;setFp(startK)&#34;" comment="&#34;&#34;" color="ffffff"></call>
+			</qFor>
+		</for>
+		<call text="&#34;setKritischePfade()&#34;" comment="&#34;&#34;" color="ffffff"></call>
+		<instruction text="&#34;Setze model.isInitialized auf true&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+	</children>
+</root>

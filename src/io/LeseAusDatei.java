@@ -44,21 +44,21 @@ public class LeseAusDatei {
 				}
 
 				String aktZeileOhneLeer = aktZeile.replace(" ", ""); // TODO fix
-				String[] zeileSplitBySemicolon = aktZeileOhneLeer.split(";");
-				if (zeileSplitBySemicolon.length != 5) {
+				String[] zeileSplit = aktZeileOhneLeer.split(";");
+				if (zeileSplit.length != 5) {
 					System.out.println(
 							"Ungültige Eingabe. Es müssen je Zeile genau 5 Argumente getrennt mit einem Semikolon übergeben werden: "
 									+ aktZeile);
 					br.close();
 					return new Model();
 				}
-					int nr = Integer.parseInt(zeileSplitBySemicolon[0]);
+					int nr = Integer.parseInt(zeileSplit[0]);
 					String beschr = aktZeile.split("; ")[1];
-					int dauer = Integer.parseInt(zeileSplitBySemicolon[2]);
+					int dauer = Integer.parseInt(zeileSplit[2]);
  
 					ArrayList<Integer> vorgaengerNummern = new ArrayList<>();					
-					if(!zeileSplitBySemicolon[3].equals("-")) {
-						String[] vorgaengerNummernArr = zeileSplitBySemicolon[3].split(",");
+					if(!zeileSplit[3].equals("-")) {
+						String[] vorgaengerNummernArr = zeileSplit[3].split(",");
 						for (int i = 0; i < vorgaengerNummernArr.length; i++) {
 							String string = vorgaengerNummernArr[i];
 							int number = Integer.parseInt(string);
@@ -67,8 +67,8 @@ public class LeseAusDatei {
 					}
 					
 					ArrayList<Integer> nachfolgerNummern = new ArrayList<>();
-					if(!zeileSplitBySemicolon[4].equals("-")) {
-						String[] nachfolgerNummernArr = zeileSplitBySemicolon[4].split(",");
+					if(!zeileSplit[4].equals("-")) {
+						String[] nachfolgerNummernArr = zeileSplit[4].split(",");
 						for (int i = 0; i < nachfolgerNummernArr.length; i++) {
 							String string = nachfolgerNummernArr[i];
 							int number = Integer.parseInt(string);
