@@ -6,6 +6,8 @@ import model.Knoten;
 import model.Model;
 
 /**
+ * Ermöglicht zu einem Model die Ausgabe der kenngrößen und kritischen Pfade
+ * auszugeben
  * 
  * @author M. Leonard Haufs Prüflingsnummer: 101-20540
  *
@@ -25,7 +27,10 @@ public abstract class Ausgabe {
 	}
 
 	/**
-	 * Gibt den Ausgabestring zurück
+	 * Gibt den Ausgabestring zurück.
+	 * 
+	 * Falls nicht zusammenhängend oder falls Zyklen enthalten sind, wird ein
+	 * entsprechender Fehler ausgegeben.
 	 * 
 	 * @return Ausgabestring
 	 */
@@ -36,11 +41,11 @@ public abstract class Ausgabe {
 		sb.append("\n");
 		sb.append("\n");
 
-		if(!this.model.isZusammenhaengend()) {
+		if (!this.model.isZusammenhaengend()) {
 			sb.append("Berechnung nicht möglich.");
 			sb.append("\n");
 			sb.append("Nicht zusammenhängend.");
-		}else if (this.model.getZyklus().size() != 0) {
+		} else if (this.model.getZyklus().size() != 0) {
 			sb.append("Berechnung nicht möglich.");
 			sb.append("\n");
 			sb.append("Zyklus erkannt: ");
