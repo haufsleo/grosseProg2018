@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root text="&#34;setFezAndFaz(Knoten aktKnoten): void&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;Setze aktKnoten.fez auf aktKnoten.faz + aktKnoten.dauer&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<alternative text="&#34;aktKnoten ist Endknoten&#34;,&#34;(Länge von aktknoten.nachfolger gleich 0)&#34;" comment="&#34;&#34;" color="ffffff">
+			<qTrue>
+				<instruction text="&#34;Setze faz von aktKnoten auf maximale fez &#34;,&#34;der Vorgängerknoten von aktKnoten&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+			</qTrue>
+			<qFalse>
+			</qFalse>
+		</alternative>
+		<for text="&#34;Für jeden knoten nachfolger von aktKnoten.nachfolger&#34;" comment="&#34;&#34;" color="ffffff">
+			<qFor>
+				<instruction text="&#34;setze nachfolger.faz auf den maximalen fez der Vorgänger von nachfolger&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+				<call text="&#34;setFezAndFaz(nachfolger)&#34;" comment="&#34;&#34;" color="ffffff"></call>
+			</qFor>
+		</for>
+	</children>
+</root>

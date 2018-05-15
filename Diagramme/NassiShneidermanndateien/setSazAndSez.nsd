@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root text="&#34;setSazAndSez(Knoten aktKnoten): void&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<alternative text="&#34;Aktueller Knoten ist Startknoten&#34;,&#34;(Länge von aktKnoten.vorgaenger gleich 0)&#34;" comment="&#34;&#34;" color="ffffff">
+			<qTrue>
+				<instruction text="&#34;Setze aktKnoten.sez auf minimalen saz der nachfolger von aktKnoten&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+			</qTrue>
+			<qFalse>
+			</qFalse>
+		</alternative>
+		<instruction text="&#34;Setze aktKnoten.saz auf aktKnoten.sez - aktKnoten.dauer&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<for text="&#34;Für jeden Knoten vorgaenger in aktKnoten.vorgaenger&#34;" comment="&#34;&#34;" color="ffffff">
+			<qFor>
+				<instruction text="&#34;Setze vorgaenger.sez auf den minimalen saz der Nachfolger von vorgaenger&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+				<call text="&#34;setSazAndSez(vorgaenger)&#34;" comment="&#34;&#34;" color="ffffff"></call>
+			</qFor>
+		</for>
+	</children>
+</root>
