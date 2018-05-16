@@ -65,8 +65,7 @@ public abstract class Ausgabe {
 			sb.append("\n");
 			this.getVorgangString(sb);
 			sb.append("\n");
-			sb.append("Gesamtdauer: ");
-			sb.append(this.getGesamtdauer());
+			this.getGesamtdauer(sb);
 			sb.append("\n");
 			sb.append("\n");
 			this.getKritischerPfadString(sb);
@@ -141,20 +140,21 @@ public abstract class Ausgabe {
 	 * @return Gesamtdauer des kritischen Pfades. Sind mehrere Kritische Pfade
 	 *         enthalten, so wird "Nicht eindeutig" zurückgegeben
 	 */
-	private String getGesamtdauer() {
+	private void getGesamtdauer(StringBuilder sb) {
+		sb.append("Gesamtdauer: ");
 		if (this.model.getKritischePfade().size() == 0) {
-			return 0 + "";
-		}
-		if (this.model.getKritischePfade().size() > 1) {
-			return "Nicht eindeutig";
+			sb.append(0);
+		} else if (this.model.getKritischePfade().size() > 1) {
+			sb.append("Nicht eindeutig");
+		} else {
+			int gesamtdauer = 0;
+			ArrayList<Knoten> firstKritPfad = this.model.getKritischePfade().get(0);
+			for (Knoten knoten : firstKritPfad) {
+				gesamtdauer += knoten.getDauer();
+			}
+			sb.append(gesamtdauer);
 		}
 
-		int gesamtdauer = 0;
-		ArrayList<Knoten> firstKritPfad = this.model.getKritischePfade().get(0);
-		for (Knoten knoten : firstKritPfad) {
-			gesamtdauer += knoten.getDauer();
-		}
-		return gesamtdauer + "";
 	}
 
 	/**

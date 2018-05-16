@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root text="&#34;getGesamtdauer(Stringbuilder sb)&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;Füge &#34;&#34;Gesamtdauer: &#34;&#34; zu sb hinzu&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<alternative text="&#34;model.kritischePfade hat Länge 0&#34;" comment="&#34;&#34;" color="ffffff">
+			<qTrue>
+				<instruction text="&#34;Füge &#34;&#34;0&#34;&#34; zu sb hinzu&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+			</qTrue>
+			<qFalse>
+				<alternative text="&#34;model.kritischePfade hat Länge größer 1&#34;" comment="&#34;&#34;" color="ffffff">
+					<qTrue>
+						<instruction text="&#34;Füge &#34;&#34;Nicht eindeutig&#34;&#34; zu sb hinzu&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+					</qTrue>
+					<qFalse>
+						<instruction text="&#34;Initialisiere Integer gesamtdauer mit 0&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+						<instruction text="&#34;Initialisiere neue Liste von Knoten firstKritPfad&#34;,&#34;als model.kritischePfade an Position 0&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+						<for text="&#34;Für jeden Knoten knoten in firstKritPfad&#34;" comment="&#34;&#34;" color="ffffff">
+							<qFor>
+								<instruction text="&#34;gesamtdauer += knoten.dauer&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+							</qFor>
+						</for>
+						<instruction text="&#34;Füge gesamtdauer zu sb hinzu&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+					</qFalse>
+				</alternative>
+			</qFalse>
+		</alternative>
+	</children>
+</root>
