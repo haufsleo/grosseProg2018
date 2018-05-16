@@ -108,7 +108,7 @@ public class LeseAusDatei {
 		}
 		if (!alleKnotenVerweisenAufExistierendenKnoten(knoten, vorgangsnummern)) {
 			System.out.println("In Datei " + file.getName()
-					+ ": Ungenügende Eingabe: Es existieren ungültige Referenzen, da mindestens ein Knoten auf einen nicht existenten Knoten referenziert.");
+					+ ": Ungenügende Eingabe: Es existieren mehrfache gleiche Vorgangsnummern.");
 			return new Model();
 		}
 		Model model = new Model(knoten, kommentar);

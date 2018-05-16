@@ -37,23 +37,29 @@ public abstract class Ausgabe {
 	protected String getAusgabeString() {
 		StringBuilder sb = new StringBuilder();
 
-		sb.append(this.model.getName());
-		sb.append("\n");
-		sb.append("\n");
 		if (this.model.getKnoten().size() == 0) {
 			sb.append("Berechnung nicht möglich.");
 			sb.append("\n");
 			sb.append("Bitte sehen Sie sich die Konsolenausgabe an, um weitere Informationen zu erhalten.");
-		} else if (!this.model.isZusammenhaengend()) {
-			sb.append("Berechnung nicht möglich.");
-			sb.append("\n");
-			sb.append("Nicht zusammenhängend.");
 		} else if (this.model.getZyklus().size() != 0) {
+			sb.append(this.model.getName());
+			sb.append("\n");
+			sb.append("\n");
 			sb.append("Berechnung nicht möglich.");
 			sb.append("\n");
 			sb.append("Zyklus erkannt: ");
 			this.getZyklusString(sb);
+		} else if (!this.model.isZusammenhaengend()) {
+			sb.append(this.model.getName());
+			sb.append("\n");
+			sb.append("\n");
+			sb.append("Berechnung nicht möglich.");
+			sb.append("\n");
+			sb.append("Nicht zusammenhängend.");
 		} else if (!this.model.isGueltigeReferenzen()) {
+			sb.append(this.model.getName());
+			sb.append("\n");
+			sb.append("\n");
 			sb.append("Berechnung nicht möglich.");
 			sb.append("\n");
 			sb.append(
