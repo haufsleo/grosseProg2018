@@ -54,10 +54,10 @@ public class Controller {
 		// Nachfolger auch in dessen Vorgaengern enthalten ist bzw. umgekehrt.
 		boolean hatGueltigeReferenzen = this.hatGueltigeReferenzen();
 		if (!hatGueltigeReferenzen) {
-			System.out.println(this.model.getName() +
-					"Referenzen der Eingabe sind ungenügend. nicht jeder Nachfolger auch in dessen Vorgaengern enthalten bzw. umgekehrt ist.");
+			System.out.println(this.model.getName()
+					+ "Referenzen der Eingabe sind ungenügend. nicht jeder Nachfolger auch in dessen Vorgaengern enthalten bzw. umgekehrt ist.");
 			model.setGueltigeReferenzen(false);
-		}else {
+		} else {
 			model.setGueltigeReferenzen(true);
 		}
 
@@ -254,6 +254,12 @@ public class Controller {
 		this.model.initialize();
 	}
 
+	/**
+	 * Setzt FEZ und FAZ ausgehend von einem aktuellen Knoten für diesen und alle
+	 * Nachfolger dieses Knotens
+	 * 
+	 * @param aktKnoten
+	 */
 	private void setFezAndFaz(Knoten aktKnoten) {
 		// Für den FEZ gilt: FEZ = FAZ + Dauer
 		aktKnoten.setFez(aktKnoten.getFaz() + aktKnoten.getDauer());
@@ -270,7 +276,8 @@ public class Controller {
 	}
 
 	/**
-	 * Berechnet SAZ für alle weiteren Knoten, ausgehend von einem aktuellen Knoten
+	 * Berechnet SAZ für den aktuell betrachteten Knoten sowie alle Vorgängerknoten,
+	 * ausgehend vom aktuell betrachteten Knoten
 	 * 
 	 * @param aktKnoten
 	 *            aktuell betrachteter Knoten
@@ -320,7 +327,7 @@ public class Controller {
 	// }
 
 	/**
-	 * Berechnet den Maximalen FEZ aller Vorgänger eines Knoten
+	 * Berechnet den Maximalen FEZ aller Vorgänger eines Knotens
 	 * 
 	 * @param aktKnoten
 	 *            aktuell betrachteter Knoten
