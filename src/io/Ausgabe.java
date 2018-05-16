@@ -40,8 +40,11 @@ public abstract class Ausgabe {
 		sb.append(this.model.getName());
 		sb.append("\n");
 		sb.append("\n");
-
-		if (!this.model.isZusammenhaengend()) {
+		if (this.model.getKnoten().size() == 0) {
+			sb.append("Berechnung nicht möglich.");
+			sb.append("\n");
+			sb.append("Bitte sehen Sie sich die Konsolenausgabe an, um weitere Informationen zu erhalten.");
+		} else if (!this.model.isZusammenhaengend()) {
 			sb.append("Berechnung nicht möglich.");
 			sb.append("\n");
 			sb.append("Nicht zusammenhängend.");

@@ -1,63 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root text="&#34;getModelAusDatei(File file): Model&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+<root text="&#34;getModelAusDatei(File file): Model&#34;" comment="" color="ffffff" type="program" style="nice">
 	<children>
-		<instruction text="&#34;Initialisiere Liste von Knoten namens knoten&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
-		<instruction text="&#34;Initialisiere String kommentar&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
-		<while text="&#34;Solange es noch weitere Zeilen namens aktZeile gibt:&#34;" comment="&#34;&#34;" color="ffffff">
+		<instruction text="&#34;Initialisiere Liste von Knoten namens knoten&#34;" comment="" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;Initialisiere String kommentar&#34;" comment="" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;Initialisiere Liste von Integer namens vorgangsnummern&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<while text="&#34;Solange es noch weitere Zeilen namens aktZeile gibt:&#34;" comment="" color="ffffff">
 			<qWhile>
-				<alternative text="&#34;aktZeile beginnt mit &#34;&#34;//&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff">
+				<alternative text="&#34;aktZeile beginnt mit &#34;&#34;//&#34;&#34;&#34;" comment="" color="ffffff">
 					<qTrue>
-						<alternative text="&#34;aktZeile beginnt mit &#34;&#34;//+&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff">
+						<alternative text="&#34;aktZeile beginnt mit &#34;&#34;//+&#34;&#34;&#34;" comment="" color="ffffff">
 							<qTrue>
-								<alternative text="&#34;(Länge von aktZeile == 4&#34;" comment="&#34;&#34;" color="ffffff">
+								<alternative text="&#34;(Länge von aktZeile == 4&#34;" comment="" color="ffffff">
 									<qTrue>
-										<instruction text="&#34;kommentar  wird auf Stellen nach der 4. Stelle gesetzt&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+										<instruction text="&#34;kommentar  wird auf Stellen nach der 4. Stelle gesetzt&#34;" comment="" color="ffffff" rotated="0"></instruction>
 									</qTrue>
 									<qFalse>
 									</qFalse>
 								</alternative>
-								<instruction text="&#34;Continue&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+								<instruction text="&#34;Continue&#34;" comment="" color="ffffff" rotated="0"></instruction>
 							</qTrue>
 							<qFalse>
 							</qFalse>
 						</alternative>
-						<instruction text="&#34;Continue&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+						<instruction text="&#34;Continue&#34;" comment="" color="ffffff" rotated="0"></instruction>
 					</qTrue>
 					<qFalse>
 					</qFalse>
 				</alternative>
-				<instruction text="&#34;Teile aktZeile nach Semikolon als aktZeileSplit&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
-				<alternative text="&#34;aktZeileSplit hat nicht genau 5 Elemente&#34;" comment="&#34;&#34;" color="ffffff">
+				<instruction text="&#34;Teile aktZeile nach Semikolon als aktZeileSplit&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<alternative text="&#34;aktZeileSplit hat nicht genau 5 Elemente&#34;" comment="" color="ffffff">
 					<qTrue>
-						<instruction text="&#34;Ausgabe ungültige Eingabe&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
-						<jump text="&#34;Rückgabe eines neuen, leeren Models&#34;" comment="&#34;&#34;" color="ffffff"></jump>
+						<instruction text="&#34;Ausgabe ungültige Eingabe&#34;" comment="" color="ffffff" rotated="0"></instruction>
+						<jump text="&#34;Rückgabe eines neuen, leeren Models&#34;" comment="" color="ffffff"></jump>
 					</qTrue>
 					<qFalse>
 					</qFalse>
 				</alternative>
-				<instruction text="&#34;Integer nr auf erstes Element von zeileSplit setzen (als Zahl konvertiert)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
-				<instruction text="&#34;String beschr auf zweites Element von zeileSplit setzen&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
-				<instruction text="&#34;Integer dauer auf drittes Element von zeileSplit setzen (Als Zahl konvertiert)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
-				<instruction text="&#34;Initialisiere Liste vorgaengerNummern als leere Liste von Integer&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
-				<alternative text="&#34;viertes Element von zeileSplit nicht &#34;&#34;-&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff">
-					<qTrue>
-						<instruction text="&#34;Trenne viertes Element von zeileSplit nach Komma und weise &#34;,&#34;es vorgaengerNummern zu (in Liste von Integer umgewandelt)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
-					</qTrue>
-					<qFalse>
-					</qFalse>
-				</alternative>
-				<instruction text="&#34;Initialisiere neue Liste nachfolgerNummern als leere Liste von Integer&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Integer nr auf erstes Element von zeileSplit setzen (als Zahl konvertiert)&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Füge nr zu Vorgangsnummern hinzu&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;String beschr auf zweites Element von zeileSplit setzen&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Integer dauer auf drittes Element von zeileSplit setzen (Als Zahl konvertiert)&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Initialisiere Liste vorgaengerNummern als leere Liste von Integer&#34;" comment="" color="ffffff" rotated="0"></instruction>
 				<alternative text="&#34;viertes Element von zeileSplit nicht &#34;&#34;-&#34;&#34;&#34;" comment="" color="ffffff">
 					<qTrue>
-						<instruction text="&#34;Trenne fünftes Element von zeileSplit nach Komma und weise &#34;,&#34;es nachfolgerNummern zu (in Liste von Integer umgewandelt)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+						<instruction text="&#34;Trenne viertes Element von zeileSplit nach Komma und weise &#34;,&#34;es vorgaengerNummern zu (in Liste von Integer umgewandelt)&#34;" comment="" color="ffffff" rotated="0"></instruction>
 					</qTrue>
 					<qFalse>
 					</qFalse>
 				</alternative>
-				<instruction text="&#34;Erstelle neuen Knoten k mit den berechneten Werten&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
-				<instruction text="&#34;Füge k zu knoten hinzu&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Initialisiere neue Liste nachfolgerNummern als leere Liste von Integer&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<alternative text="&#34;viertes Element von zeileSplit nicht &#34;&#34;-&#34;&#34;&#34;" comment="" color="ffffff">
+					<qTrue>
+						<instruction text="&#34;Trenne fünftes Element von zeileSplit nach Komma und weise &#34;,&#34;es nachfolgerNummern zu (in Liste von Integer umgewandelt)&#34;" comment="" color="ffffff" rotated="0"></instruction>
+					</qTrue>
+					<qFalse>
+					</qFalse>
+				</alternative>
+				<alternative text="&#34;vorgangsnummernNichtDoppelt()&#34;" comment="&#34;&#34;" color="ffffff">
+					<qTrue>
+						<instruction text="&#34;Ausgabe ungültige Eingabe&#34;" comment="" color="ffffff" rotated="0"></instruction>
+						<jump text="&#34;Rückgabe eines neuen, leeren Models&#34;" comment="" color="ffffff"></jump>
+					</qTrue>
+					<qFalse>
+					</qFalse>
+				</alternative>
+				<instruction text="&#34;Erstelle neuen Knoten k mit den berechneten Werten&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Füge k zu knoten hinzu&#34;" comment="" color="ffffff" rotated="0"></instruction>
 			</qWhile>
 		</while>
-		<jump text="&#34;Gebe neues Model mit knoten und kommentar zurück&#34;" comment="&#34;&#34;" color="ffffff"></jump>
+		<jump text="&#34;Gebe neues Model mit knoten und kommentar zurück&#34;" comment="" color="ffffff"></jump>
 	</children>
 </root>

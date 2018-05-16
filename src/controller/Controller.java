@@ -36,14 +36,14 @@ public class Controller {
 		// Prüfe, ob der im Model gekapselte Netzplan keine Zyklen enthällt
 		boolean hatKeineZyklen = this.hatKeineZyklen();
 		if (!hatKeineZyklen) {
-			System.out.println("Zyklen enthalten");
+			System.out.println(this.model.getName() + ": Zyklen enthalten");
 			return;
 		}
 
 		// Prüfe, ob der im Model gekapselte Netzplan zusammenhängend ist
 		boolean isZusammenhaengend = this.isZusammenhaengend();
 		if (!isZusammenhaengend) {
-			System.out.println("Nicht zusammenhängend");
+			System.out.println(this.model.getName() + ": Fehler (Nicht zusammenhängend)");
 			model.setZusammenhaengend(false);
 			return;
 		} else {
@@ -54,7 +54,7 @@ public class Controller {
 		// Nachfolger auch in dessen Vorgaengern enthalten ist bzw. umgekehrt.
 		boolean hatGueltigeReferenzen = this.hatGueltigeReferenzen();
 		if (!hatGueltigeReferenzen) {
-			System.out.println(
+			System.out.println(this.model.getName() +
 					"Referenzen der Eingabe sind ungenügend. nicht jeder Nachfolger auch in dessen Vorgaengern enthalten bzw. umgekehrt ist.");
 			model.setGueltigeReferenzen(false);
 		}else {

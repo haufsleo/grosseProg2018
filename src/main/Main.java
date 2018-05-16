@@ -72,7 +72,7 @@ public class Main {
 						}
 					}
 				}
-				System.out.print("Abgeschlossen.");
+				System.out.print("Vorgang abgeschlossen.");
 			} else {
 				throw new IOException("Der Angegebene Pfad ist kein Ordner oder kann nicht geöffnet werden.");
 			}
