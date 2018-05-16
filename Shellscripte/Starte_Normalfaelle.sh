@@ -1,0 +1,1 @@
+java -jar ../Netzplanerstellung.jar .in ../Testfaelle/Normalfaelle/
