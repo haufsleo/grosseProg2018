@@ -106,7 +106,11 @@ public class LeseAusDatei {
 					+ ": Ungenügende Eingabe. Es wurde mindestens eine ungültige Zahl eingeben.");
 			return new Model();
 		}
-
+		if (!alleKnotenVerweisenAufExistierendenKnoten(knoten, vorgangsnummern)) {
+			System.out.println("In Datei " + file.getName()
+					+ ": Ungenügende Eingabe: Es existieren ungültige Referenzen, da mindestens ein Knoten auf einen nicht existenten Knoten referenziert.");
+			return new Model();
+		}
 		Model model = new Model(knoten, kommentar);
 		return model;
 	}
@@ -132,4 +136,32 @@ public class LeseAusDatei {
 		return true;
 	}
 
+	/**
+	 * Prüft, ob alle Knoten auf einen existierenden Knoten verweisen.
+	 * 
+	 * @param knoten
+	 *            Knotenliste, der zu prüfenden Knoten
+	 * @param vorgangsnummern
+	 *            Liste der Vorgangsnummern aller Knoten
+	 * @return true, falls alle Knoten auf einen existierenden Knoten verweisen,
+	 *         sonst false
+	 */
+	private boolean alleKnotenVerweisenAufExistierendenKnoten(ArrayList<Knoten> knoten,
+			ArrayList<Integer> vorgangsnummern) {
+		for (Knoten k : knoten) {
+			for (int nachfolgernummer : k.getNachfolgerNummern()) {
+				if (!vorgangsnummern.contains(Integer.valueOf(nachfolgernummer))) {
+					return false;
+				}
+			}
+
+			for (int vorgaengernummer : k.getVorgaengerNummern()) {
+				if (!vorgangsnummern.contains(Integer.valueOf(vorgaengernummer))) {
+					return false;
+				}
+			}
+
+		}
+		return true;
+	}
 }
