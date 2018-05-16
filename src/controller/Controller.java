@@ -72,7 +72,7 @@ public class Controller {
 	 * 
 	 * @return true, falls der Netzplan im Model keine Zyklen enthällt, sonst true
 	 */
-	private boolean hatKeineZyklen() {
+	boolean hatKeineZyklen() {
 		ArrayList<Boolean> check = new ArrayList<>();
 
 		/*
@@ -120,7 +120,7 @@ public class Controller {
 	 * 
 	 * @return true, falls der Netzplan zusammenhängend ist, sonst false
 	 */
-	private boolean isZusammenhaengend() {
+	boolean isZusammenhaengend() {
 		this.validationsListe = new ArrayList<>();
 
 		for (Knoten startK : this.model.getStartknoten()) {
