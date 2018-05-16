@@ -1,0 +1,10 @@
+//**********************************************************************************
+//+ Strings statt Zahlen
+//**********************************************************************************
+//Vorgangsnummer; Vorgangsbezeichnung; Dauer; Vorgänger; Nachfolger
+1; Knoten A; 2; -; 2
+2; Knoten B; 3; 1; 3
+3; Knoten C; 3; 2; 4
+4; Knoten D; 10; 3; 5
+5; Knoten E; 5; 4; 6;
+6; Knoten F; 5; 5; -

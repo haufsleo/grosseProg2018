@@ -88,7 +88,7 @@ public class LeseAusDatei {
 					}
 				}
 				// Prüfe, ob vorgangsnummern nicht doppelt vorliegen
-				if (!vorgangsnummernNichtDoppelt(vorgaengerNummern)) {
+				if (!vorgangsnummernNichtDoppelt(vorgangsnummern)) {
 					System.out.println("In Datei " + file.getName()
 							+ ": Ungenügende Eingabe: Es kommt mindestens eine Vorgangsnummer mehrfach vor.");
 					br.close();
@@ -108,7 +108,7 @@ public class LeseAusDatei {
 		}
 		if (!alleKnotenVerweisenAufExistierendenKnoten(knoten, vorgangsnummern)) {
 			System.out.println("In Datei " + file.getName()
-					+ ": Ungenügende Eingabe: Es existieren mehrfache gleiche Vorgangsnummern.");
+					+ ": Ungenügende Eingabe: Es existieren ungültige Referenzen, da mindestens ein Knoten auf einen nicht existenten Knoten referenziert.");
 			return new Model();
 		}
 		Model model = new Model(knoten, kommentar);
