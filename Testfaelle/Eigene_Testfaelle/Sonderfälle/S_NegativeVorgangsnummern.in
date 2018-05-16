@@ -1,0 +1,11 @@
+//************************************************
+//+ Negative Vorgangsnummer
+//************************************************
+//Vorgangsnummer; Vorgangsbezeichnung; Dauer; Vorgänger; Nachfolger
+-1 ; Knoten A; 1; -; 2,4
+2; Knoten B; 25; -1; 3
+3; Knoten C; 10; 2; 6
+4; Knoten D; 6; -1; 5
+5; Knoten E; 1; 4; 6
+6; Knoten F; 2; 3,5; 7
+7; Knoten G; 1; 6; -
