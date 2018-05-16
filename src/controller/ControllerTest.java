@@ -26,14 +26,14 @@ public class ControllerTest {
 		Model model = new Model(knotenliste, "Testliste");
 		//
 		Controller controller = new Controller(model);
-		
-		// Ausführen
+
+		// AusfÃ¼hren
 		boolean keineZyklen = controller.hatKeineZyklen();
-		
+
 		// Auswerten
 		assertEquals(true, keineZyklen);
 	}
-	
+
 	@Test
 	public void hatKeineZyklen_ZweiterKnotenHatErstenKnotenAlsNachfolger_RueckgabeFalse() {
 		// Arrangieren
@@ -52,14 +52,14 @@ public class ControllerTest {
 		Model model = new Model(knotenliste, "Testliste");
 		//
 		Controller controller = new Controller(model);
-		
-		// Ausführen
+
+		// AusfÃ¼hren
 		boolean keineZyklen = controller.hatKeineZyklen();
-		
+
 		// Auswerten
 		assertEquals(false, keineZyklen);
 	}
-	
+
 	@Test
 	public void hatKeineZyklen_ErsterKnotenHatZweitenKnotenAlsVorgaengerSowieNachfolgerUndZweiterKnotenHatErstenKnotenAlsVorgaenger_RueckgabeTrueDaKeinExistierenderStartpunkt() {
 		// Arrangieren
@@ -81,14 +81,14 @@ public class ControllerTest {
 		Model model = new Model(knotenliste, "Testliste");
 		//
 		Controller controller = new Controller(model);
-		
-		// Ausführen
+
+		// AusfÃ¼hren
 		boolean keineZyklen = controller.hatKeineZyklen();
-		
+
 		// Auswerten
 		assertEquals(true, keineZyklen);
 	}
-	
+
 	@Test
 	public void hatKeineZyklen_ZweiKnotenHabenSichGegenseitigAlsNachfolgerSowieVorgaenger_RueckgabeTrueDaKeinExistierenderStartpunkt() {
 		// Arrangieren
@@ -111,14 +111,14 @@ public class ControllerTest {
 		Model model = new Model(knotenliste, "Testliste");
 		//
 		Controller controller = new Controller(model);
-		
-		// Ausführen
+
+		// AusfÃ¼hren
 		boolean keineZyklen = controller.hatKeineZyklen();
-		
+
 		// Auswerten
 		assertEquals(true, keineZyklen);
 	}
-	
+
 	@Test
 	public void hatKeineZyklen_DritterKnotenHatZweitenKnotenAlsNachfolger_RueckgabeFalse() {
 		// Arrangieren
@@ -147,14 +147,14 @@ public class ControllerTest {
 		Model model = new Model(knotenliste, "Testliste");
 		//
 		Controller controller = new Controller(model);
-		
-		// Ausführen
+
+		// AusfÃ¼hren
 		boolean keineZyklen = controller.hatKeineZyklen();
-		
+
 		// Auswerten
 		assertEquals(false, keineZyklen);
 	}
-	
+
 	@Test
 	public void isZusammenhaengend_ZusammenhaengendeKnoten_RueckgabeTrue() {
 		// Arrangieren
@@ -182,14 +182,14 @@ public class ControllerTest {
 		Model model = new Model(knotenliste, "Testliste");
 		//
 		Controller controller = new Controller(model);
-		
-		// Ausführen
+
+		// AusfÃ¼hren
 		boolean zusammenhaengend = controller.isZusammenhaengend();
-		
+
 		// Auswerten
 		assertEquals(true, zusammenhaengend);
 	}
-	
+
 	@Test
 	public void isZusammenhaengend_DritterKnotenHatEinenVorgaengerAberDieserKeinenNachfolger_RueckgabeFalse() {
 		// Arrangieren
@@ -216,11 +216,80 @@ public class ControllerTest {
 		Model model = new Model(knotenliste, "Testliste");
 		//
 		Controller controller = new Controller(model);
-		
-		// Ausführen
+
+		// AusfÃ¼hren
 		boolean zusammenhaengend = controller.isZusammenhaengend();
-		
+
 		// Auswerten
 		assertEquals(false, zusammenhaengend);
+	}
+
+	@Test
+	public void hatGueltigeReferenzen_dreiKnotenMitFehlenderReferenzVomZweitenZumDrittenKnoten_nichtGueltig() {
+		// Arrangieren
+		ArrayList<Knoten> knotenliste = new ArrayList<Knoten>();
+		//
+		ArrayList<Integer> ersterKnotenVorgaenger = new ArrayList<Integer>();
+		ArrayList<Integer> ersterKnotenNachfolger = new ArrayList<Integer>();
+		ersterKnotenNachfolger.add(2);
+		Knoten ersterKnoten = new Knoten(1, "Erster Schritt", 10, ersterKnotenVorgaenger, ersterKnotenNachfolger);
+		knotenliste.add(ersterKnoten);
+		//
+		ArrayList<Integer> zweiterKnotenVorgaenger = new ArrayList<Integer>();
+		zweiterKnotenVorgaenger.add(1);
+		ArrayList<Integer> zweiterKnotenNachfolger = new ArrayList<Integer>();
+		Knoten zweiterKnoten = new Knoten(2, "Zweiter Schritt", 10, zweiterKnotenVorgaenger, zweiterKnotenNachfolger);
+		knotenliste.add(zweiterKnoten);
+		//
+		ArrayList<Integer> dritterKnotenVorgaenger = new ArrayList<Integer>();
+		dritterKnotenVorgaenger.add(2);
+		ArrayList<Integer> dritterKnotenNachfolger = new ArrayList<Integer>();
+		Knoten dritterKnoten = new Knoten(3, "Dritter Schritt", 10, dritterKnotenVorgaenger, dritterKnotenNachfolger);
+		knotenliste.add(dritterKnoten);
+		//
+		Model model = new Model(knotenliste, "Testliste");
+		//
+		Controller controller = new Controller(model);
+
+		// AusfÃ¼hren
+		boolean gueltig = controller.hatGueltigeReferenzen();
+
+		// Auswerten
+		assertEquals(false, gueltig);
+	}
+
+	@Test
+	public void hatGueltigeReferenzen_dreiKnotenMitKorrektGesetztenReferenzen_istGueltig() {
+		// Arrangieren
+		ArrayList<Knoten> knotenliste = new ArrayList<Knoten>();
+		//
+		ArrayList<Integer> ersterKnotenVorgaenger = new ArrayList<Integer>();
+		ArrayList<Integer> ersterKnotenNachfolger = new ArrayList<Integer>();
+		ersterKnotenNachfolger.add(2);
+		Knoten ersterKnoten = new Knoten(1, "Erster Schritt", 10, ersterKnotenVorgaenger, ersterKnotenNachfolger);
+		knotenliste.add(ersterKnoten);
+		//
+		ArrayList<Integer> zweiterKnotenVorgaenger = new ArrayList<Integer>();
+		zweiterKnotenVorgaenger.add(1);
+		ArrayList<Integer> zweiterKnotenNachfolger = new ArrayList<Integer>();
+		zweiterKnotenNachfolger.add(3);
+		Knoten zweiterKnoten = new Knoten(2, "Zweiter Schritt", 10, zweiterKnotenVorgaenger, zweiterKnotenNachfolger);
+		knotenliste.add(zweiterKnoten);
+		//
+		ArrayList<Integer> dritterKnotenVorgaenger = new ArrayList<Integer>();
+		dritterKnotenVorgaenger.add(2);
+		ArrayList<Integer> dritterKnotenNachfolger = new ArrayList<Integer>();
+		Knoten dritterKnoten = new Knoten(3, "Dritter Schritt", 10, dritterKnotenVorgaenger, dritterKnotenNachfolger);
+		knotenliste.add(dritterKnoten);
+		//
+		Model model = new Model(knotenliste, "Testliste");
+		//
+		Controller controller = new Controller(model);
+
+		// AusfÃ¼hren
+		boolean gueltig = controller.hatGueltigeReferenzen();
+
+		// Auswerten
+		assertEquals(true, gueltig);
 	}
 }

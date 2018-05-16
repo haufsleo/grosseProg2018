@@ -496,7 +496,7 @@ public class Controller {
 	 * 
 	 * @return true, falls alle Referenzen korrekt sind, sonst false.
 	 */
-	private boolean hatGueltigeReferenzen() {
+	boolean hatGueltigeReferenzen() {
 		for (Knoten k1 : this.model.getKnoten()) {
 			for (Knoten nachfolger : k1.getNachfolger()) {
 				if (!nachfolger.getVorgaenger().contains(k1)) {
