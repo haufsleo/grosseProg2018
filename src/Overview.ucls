@@ -21,7 +21,7 @@
   </class>  
   <class id="3" language="java" name="main.Main" project="2018_GrosseProg" file="/2018_GrosseProg/src/main/Main.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="472" y="137"/>    
+    <position height="-1" width="-1" x="631" y="130"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -30,7 +30,7 @@
   </class>  
   <class id="4" language="java" name="io.LeseAusDatei" project="2018_GrosseProg" 
     file="/2018_GrosseProg/src/io/LeseAusDatei.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="673" y="142"/>    
+    <position height="-1" width="-1" x="977" y="134"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -39,7 +39,7 @@
   </class>  
   <class id="5" language="java" name="io.Ausgabe" project="2018_GrosseProg" file="/2018_GrosseProg/src/io/Ausgabe.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="936" y="308"/>    
+    <position height="-1" width="-1" x="980" y="306"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -48,7 +48,7 @@
   </class>  
   <class id="6" language="java" name="io.AusgabeInDatei" project="2018_GrosseProg" 
     file="/2018_GrosseProg/src/io/AusgabeInDatei.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="933" y="499"/>    
+    <position height="-1" width="-1" x="977" y="505"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      

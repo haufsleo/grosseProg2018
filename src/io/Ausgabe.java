@@ -50,6 +50,11 @@ public abstract class Ausgabe {
 			sb.append("\n");
 			sb.append("Zyklus erkannt: ");
 			this.getZyklusString(sb);
+		} else if (!this.model.isGueltigeReferenzen()) {
+			sb.append("Berechnung nicht möglich.");
+			sb.append("\n");
+			sb.append(
+					"Referenzen der Eingabe sind nicht gültig! Es gibt also mindestens einen Knoten,\ndessen Nachfolger den Knoten selbst nicht als Vorgänger hat\nbzw. dessen Vorgänger den Knoten selbst nicht als Nachfolger hat.");
 		} else {
 			sb.append("Vorgangsnummer; Vorgangsbeschreibung; D; FAZ; FEZ; SAZ; SEZ; GP; FP");
 			sb.append("\n");

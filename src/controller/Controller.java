@@ -50,6 +50,17 @@ public class Controller {
 			model.setZusammenhaengend(true);
 		}
 
+		// Prüft, ob alle Referenzen in model.knoten korrekt sind, also ob jeder
+		// Nachfolger auch in dessen Vorgaengern enthalten ist bzw. umgekehrt.
+		boolean hatGueltigeReferenzen = this.hatGueltigeReferenzen();
+		if (!hatGueltigeReferenzen) {
+			System.out.println(
+					"Referenzen der Eingabe sind ungenügend. nicht jeder Nachfolger auch in dessen Vorgaengern enthalten bzw. umgekehrt ist.");
+			model.setGueltigeReferenzen(false);
+		}else {
+			model.setGueltigeReferenzen(true);
+		}
+
 		// Initialisiere das Model
 		if (!this.model.isInitialized()) {
 			initModel();
@@ -475,5 +486,33 @@ public class Controller {
 			// // Entferne den zuletzt hinzugefügten Knoten aus dem Pfad-Array
 			// pfad.remove(pfad.size() - 1);
 		}
+	}
+
+	/**
+	 * Prüft, ob alle Referenzen in model.knoten korrekt sind, also ob jeder
+	 * Nachfolger auch in dessen Vorgaengern enthalten ist bzw. umgekehrt.
+	 * 
+	 * Darf erst nach der Prüfung der Zyklen aufgerufen werden!
+	 * 
+	 * @return true, falls alle Referenzen korrekt sind, sonst false.
+	 */
+	private boolean hatGueltigeReferenzen() {
+		for (Knoten k1 : this.model.getKnoten()) {
+			for (Knoten nachfolger : k1.getNachfolger()) {
+				if (!nachfolger.getVorgaenger().contains(k1)) {
+					return false;
+				}
+			}
+		}
+
+		for (Knoten k1 : this.model.getKnoten()) {
+			for (Knoten vorgaenger : k1.getVorgaenger()) {
+				if (!vorgaenger.getNachfolger().contains(k1)) {
+					return false;
+				}
+			}
+		}
+
+		return true;
 	}
 }

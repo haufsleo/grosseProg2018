@@ -1,0 +1,16 @@
+Beispiel 2 - Wasserfallmodell
+
+Vorgangsnummer; Vorgangsbeschreibung; D; FAZ; FEZ; SAZ; SEZ; GP; FP
+1; Problemanalyse; 2; 0; 2; 0; 2; 0; 0
+2; Grobplanung; 3; 2; 5; 2; 5; 0; 0
+3; Feinplanung; 3; 5; 8; 5; 8; 0; 0
+4; Implementierung; 10; 8; 18; 8; 18; 0; 0
+5; Testphase; 5; 18; 23; 18; 23; 0; 0
+6; Einsatz und Wartung; 5; 23; 28; 23; 28; 0; 0
+
+Anfangsvorgang: 1
+Endvorgang: 6
+Gesamtdauer: 28
+
+Kritischer Pfad
+1->2->3->4->5->6

@@ -1,0 +1,19 @@
+Beispiel 3
+
+Vorgangsnummer; Vorgangsbeschreibung; D; FAZ; FEZ; SAZ; SEZ; GP; FP
+1; Kaffee mahlen; 1; 0; 1; 2; 3; 2; 0
+2; Kaffee in Trichter füllen; 1; 1; 2; 3; 4; 2; 2
+3; Wasser kochen; 4; 0; 4; 0; 4; 0; 0
+4; Kaffee brühen; 6; 4; 10; 4; 10; 0; 0
+5; Kaffee trinken; 3; 10; 13; 10; 13; 0; 0
+6; Tee in Beutel füllen; 1; 0; 1; 3; 4; 3; 3
+7; Tee aufsetzen; 5; 4; 9; 4; 9; 0; 0
+8; Tee trinken; 3; 9; 12; 9; 12; 0; 0
+
+Anfangsvorgang: 1,3,6
+Endvorgang: 5,8
+Gesamtdauer: Nicht eindeutig
+
+Kritische Pfade
+3->4->5
+3->7->8

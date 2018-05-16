@@ -1,0 +1,6 @@
+Beispiel 5 IT-Installation
+
+Berechnung nicht möglich.
+Referenzen der Eingabe sind nicht gültig! Es gibt also mindestens einen Knoten,
+dessen Nachfolger den Knoten selbst nicht als Vorgänger hat
+bzw. dessen Vorgänger den Knoten selbst nicht als Nachfolger hat.

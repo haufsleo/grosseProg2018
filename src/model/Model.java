@@ -18,7 +18,7 @@ public class Model {
 	private ArrayList<ArrayList<Knoten>> kritischePfade;
 	private ArrayList<Knoten> zyklus;
 	private boolean isZusammenhaengend; 
-	
+	private boolean gueltigeReferenzen;
 
 	private String name;
 
@@ -36,6 +36,14 @@ public class Model {
 
 	public void setZusammenhaengend(boolean isZusammenhaengend) {
 		this.isZusammenhaengend = isZusammenhaengend;
+	}
+
+	public boolean isGueltigeReferenzen() {
+		return gueltigeReferenzen;
+	}
+
+	public void setGueltigeReferenzen(boolean gueltigeReferenzen) {
+		this.gueltigeReferenzen = gueltigeReferenzen;
 	}
 
 	// Getter und Setter
@@ -83,7 +91,7 @@ public class Model {
 		
 		this.kritischePfade = new ArrayList<>();
 		this.zyklus = new ArrayList<>();
-		
+		this.gueltigeReferenzen = true;		
 	}
 
 	public Model(ArrayList<Knoten> knoten, String name) {
