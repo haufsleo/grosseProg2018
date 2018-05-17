@@ -9,7 +9,8 @@
       <w>81</w>
       <h>45</h>
     </coordinates>
-    <panel_attributes>lt=&lt;-</panel_attributes>
+    <panel_attributes>lt=&lt;-
+fg=red</panel_attributes>
     <additional_attributes>70.0;30.0;30.0;30.0;30.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
@@ -31,7 +32,8 @@
       <w>117</w>
       <h>135</h>
     </coordinates>
-    <panel_attributes>lt=&lt;-</panel_attributes>
+    <panel_attributes>lt=&lt;-
+fg=red</panel_attributes>
     <additional_attributes>110.0;10.0;30.0;10.0;30.0;130.0;10.0;130.0</additional_attributes>
   </element>
   <element>
@@ -75,7 +77,8 @@
       <w>54</w>
       <h>135</h>
     </coordinates>
-    <panel_attributes>lt=&lt;-</panel_attributes>
+    <panel_attributes>lt=&lt;-
+fg=red</panel_attributes>
     <additional_attributes>10.0;130.0;40.0;130.0;40.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
@@ -108,7 +111,8 @@
       <w>99</w>
       <h>27</h>
     </coordinates>
-    <panel_attributes>lt=&lt;-</panel_attributes>
+    <panel_attributes>lt=&lt;-
+fg=red</panel_attributes>
     <additional_attributes>90.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
@@ -185,7 +189,8 @@
       <w>90</w>
       <h>81</h>
     </coordinates>
-    <panel_attributes>lt=&lt;-</panel_attributes>
+    <panel_attributes>lt=&lt;-
+fg=red</panel_attributes>
     <additional_attributes>80.0;10.0;50.0;10.0;50.0;70.0;10.0;70.0</additional_attributes>
   </element>
   <element>
@@ -196,7 +201,8 @@
       <w>99</w>
       <h>27</h>
     </coordinates>
-    <panel_attributes>lt=&lt;-</panel_attributes>
+    <panel_attributes>lt=&lt;-
+fg=red</panel_attributes>
     <additional_attributes>90.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
@@ -251,7 +257,8 @@
       <w>99</w>
       <h>81</h>
     </coordinates>
-    <panel_attributes>lt=&lt;-</panel_attributes>
+    <panel_attributes>lt=&lt;-
+fg=red</panel_attributes>
     <additional_attributes>90.0;10.0;50.0;10.0;50.0;70.0;10.0;70.0</additional_attributes>
   </element>
   <element>
@@ -262,8 +269,7 @@
       <w>279</w>
       <h>63</h>
     </coordinates>
-    <panel_attributes>lt=&lt;-
-fg=red</panel_attributes>
+    <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>290.0;50.0;270.0;50.0;270.0;10.0;60.0;10.0;60.0;30.0;10.0;30.0</additional_attributes>
   </element>
   <element>
@@ -275,7 +281,8 @@ fg=red</panel_attributes>
       <h>36</h>
     </coordinates>
     <panel_attributes>Nummer 1
-Dauer 1</panel_attributes>
+Dauer 1
+fg=red</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -299,7 +306,8 @@ Dauer 1</panel_attributes>
       <h>36</h>
     </coordinates>
     <panel_attributes>Nummer 2
-Dauer 2</panel_attributes>
+Dauer 2
+fg=red</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -311,7 +319,8 @@ Dauer 2</panel_attributes>
       <h>36</h>
     </coordinates>
     <panel_attributes>Nummer 5
-Dauer 4</panel_attributes>
+Dauer 4
+fg=red</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -335,7 +344,8 @@ Dauer 1</panel_attributes>
       <h>36</h>
     </coordinates>
     <panel_attributes>Nummer 7
-Dauer 5</panel_attributes>
+Dauer 5
+fg=red</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -383,7 +393,8 @@ Dauer 1</panel_attributes>
       <h>36</h>
     </coordinates>
     <panel_attributes>Nummer 11
-Dauer 5</panel_attributes>
+Dauer 5
+fg=red</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -419,7 +430,8 @@ Dauer 1</panel_attributes>
       <h>36</h>
     </coordinates>
     <panel_attributes>Nummer 13
-Dauer 1</panel_attributes>
+Dauer 1
+fg=red</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -455,7 +467,8 @@ Dauer 1</panel_attributes>
       <h>36</h>
     </coordinates>
     <panel_attributes>Nummer 14
-Dauer 2</panel_attributes>
+Dauer 2
+fg=red</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -467,20 +480,8 @@ Dauer 2</panel_attributes>
       <h>54</h>
     </coordinates>
     <panel_attributes>Nummer 17
-Dauer 3</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>783</x>
-      <y>450</y>
-      <w>180</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>Fehlerhafte Relation
-lt=&lt;-
+Dauer 3
 fg=red</panel_attributes>
-    <additional_attributes>180.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes/>
   </element>
 </diagram>

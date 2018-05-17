@@ -19,9 +19,9 @@ public class Main {
 
 		// Nur zum Testen- wird später aus über die Argumente args der Jar
 		// übergeben
-//		args = new String[2];
-//		args[0] = ".in";
-//		args[1] = "/Users/hfs23/Dropbox/MATSE/Programmieraufgaben/2018_GrosseProg/Testfaelle";
+		args = new String[2];
+		args[0] = ".in";
+		args[1] = "/Users/hfs23/Dropbox/MATSE/Programmieraufgaben/2018_GrosseProg/Testfaelle";
 
 		// Parameterübergabe prüfen
 		if (args.length != 2) {

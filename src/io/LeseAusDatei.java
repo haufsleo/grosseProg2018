@@ -31,12 +31,12 @@ public class LeseAusDatei {
 		ArrayList<Knoten> knoten = new ArrayList<>();
 		String kommentar = "Fehler beim Einlesen.";
 		ArrayList<Integer> vorgangsnummern = new ArrayList<>();
-
 		BufferedReader br;
 		try {
 			br = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
 		} catch (FileNotFoundException ex) {
-			System.out.println(ex);
+			System.out
+					.println("In Datei " + file.getName() + "Ungenügende Eingabe: Datei konnte nicht geöffnet werden");
 			return new Model();
 		}
 
@@ -99,16 +99,24 @@ public class LeseAusDatei {
 			}
 			br.close();
 		} catch (IOException ex) {
-			System.out.println(ex);
+			System.out.println("In Datei " + file.getName() + "Ungenügende Einabe: Eingabestruktur nicht erfüllt");
 			new Model();
 		} catch (NumberFormatException e) {
 			System.out.println("In Datei " + file.getName()
 					+ ": Ungenügende Eingabe. Es wurde mindestens eine ungültige Zahl eingeben.");
 			return new Model();
+		} catch (Exception e) {
+			System.out.println("In Datei " + file.getName() + ": Ungenügende Eingabe.");
+			return new Model();
 		}
 		if (!alleKnotenVerweisenAufExistierendenKnoten(knoten, vorgangsnummern)) {
 			System.out.println("In Datei " + file.getName()
 					+ ": Ungenügende Eingabe: Es existieren ungültige Referenzen, da mindestens ein Knoten auf einen nicht existenten Knoten referenziert.");
+			return new Model();
+		}
+		if (knoten.size() == 0) {
+			System.out.println(
+					"In Datei " + file.getName() + ": Ungenügende Eingabe: Es wurden keinerlei Vorgänge angegeben.");
 			return new Model();
 		}
 		Model model = new Model(knoten, kommentar);
