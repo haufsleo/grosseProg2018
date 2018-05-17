@@ -9,6 +9,12 @@ import org.junit.Test;
 import model.Knoten;
 import model.Model;
 
+/**
+ * Unittest der Klasse Controllers
+ * 
+ * @author M. Leonard Haufs Prüflingsnummer: 101-20540
+ *
+ */
 public class ControllerTest {
 	@Test
 	public void hatKeineZyklen_ModelOhneZyklen_RueckgabeTrue() {

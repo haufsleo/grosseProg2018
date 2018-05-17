@@ -17,7 +17,7 @@ public class Model {
 
 	private ArrayList<ArrayList<Knoten>> kritischePfade;
 	private ArrayList<Knoten> zyklus;
-	private boolean isZusammenhaengend; 
+	private boolean isZusammenhaengend;
 	private boolean gueltigeReferenzen;
 
 	private String name;
@@ -62,7 +62,7 @@ public class Model {
 	public void setZyklus(ArrayList<Knoten> zyklus) {
 		this.zyklus = zyklus;
 	}
-	
+
 	public ArrayList<Knoten> getStartknoten() {
 		return startknoten;
 	}
@@ -88,10 +88,10 @@ public class Model {
 
 		this.startknoten = new ArrayList<>();
 		this.endknoten = new ArrayList<>();
-		
+
 		this.kritischePfade = new ArrayList<>();
 		this.zyklus = new ArrayList<>();
-		this.gueltigeReferenzen = true;		
+		this.gueltigeReferenzen = true;
 	}
 
 	public Model(ArrayList<Knoten> knoten, String name) {
@@ -104,6 +104,13 @@ public class Model {
 		this.endknoten = this.getEndknoten(knoten);
 	}
 
+	/**
+	 * Bestimmt die Startknoten einer Liste von Knoten
+	 * 
+	 * @param knoten
+	 *            Liste von Knoten
+	 * @return Startknoten einer Liste von Knoten
+	 */
 	private ArrayList<Knoten> getStartknoten(ArrayList<Knoten> knoten) {
 		ArrayList<Knoten> startknoten = new ArrayList<>();
 		for (Knoten k : knoten) {
@@ -115,6 +122,13 @@ public class Model {
 		return startknoten;
 	}
 
+	/**
+	 * Bestimmt die Endknoten einer Liste von Knoten
+	 * 
+	 * @param knoten
+	 *            Liste von Knoten
+	 * @return Endknoten einer Liste von Knoten
+	 */
 	private ArrayList<Knoten> getEndknoten(ArrayList<Knoten> knoten) {
 		ArrayList<Knoten> endknoten = new ArrayList<>();
 		for (Knoten k : knoten) {
@@ -126,6 +140,13 @@ public class Model {
 		return endknoten;
 	}
 
+	/**
+	 * Initialisiert eine liste von Knoten, setzt also die Vorgänger und Nachfolger
+	 * der Knoten
+	 * 
+	 * @param knoten
+	 *            Liste von Knoten
+	 */
 	private void initKnoten(ArrayList<Knoten> knoten) {
 		for (Knoten k : knoten) {
 			for (int vorgaengerNr : k.getVorgaengerNummern()) {

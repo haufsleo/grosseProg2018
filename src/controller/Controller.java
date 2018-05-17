@@ -192,16 +192,6 @@ public class Controller {
 			this.setFezAndFaz(startK);
 		}
 
-		// /*
-		// * Setze FAZ für alle Nachfolger der Startknoten als der größte
-		// * (späteste) FEZ der unmittelbaren Vorgänger.
-		// */
-		// for (Knoten startK : this.model.getStartknoten()) {
-		// for (Knoten nachfolger : startK.getNachfolger()) {
-		// setFaz(nachfolger);
-		// }
-		// }
-
 		/*
 		 * 2. Phase: Rückwärtsrechnung
 		 * 
@@ -222,16 +212,6 @@ public class Controller {
 		for (Knoten endKnoten : this.model.getEndknoten()) {
 			this.setSazAndSez(endKnoten);
 		}
-
-		// /*
-		// * Der SAZ eines Vorgangs wird SEZ aller unmittelbarer Vorgänger
-		// *
-		// * Haben mehrere Vorgänge einen gemeinsamen Vorgänger, so ist dessen SEZ der
-		// * früheste (kleinste) SAZ aller Nachfolger.
-		// **/
-		// for (Knoten endK : this.model.getEndknoten()) {
-		// setSez(endK);
-		// }
 
 		// 3. Phase: Ermittlung der Zeitreserven
 		for (Knoten startK : this.model.getStartknoten()) {
@@ -306,26 +286,6 @@ public class Controller {
 		}
 	}
 
-	// /**
-	// * Setzt FAZ für alle Knoten ausgehend von einem aktuellen Knoten
-	// *
-	// * @param aktKnoten
-	// * aktuell betrachteter Knoten
-	// */
-	// private void setFaz(Knoten aktKnoten) {
-	// /*
-	// * Der FEZ eines Vorgängers ist FAZ aller unmittelbar nachfolgenden Knoten.
-	// * Münden mehrere Knoten in einen Vorgang, dann ist der FAZ der größte
-	// * (späteste) FEZ der unmittelbaren Vorgänger.
-	// */
-	// aktKnoten.setFaz(this.getMaxFezOfVorgaenger(aktKnoten));
-	//
-	// // Rufe setFaz für alle nachfolgenden Knoten von aktKnoten auf
-	// for (Knoten nachfolger : aktKnoten.getNachfolger()) {
-	// setFaz(nachfolger);
-	// }
-	// }
-
 	/**
 	 * Berechnet den Maximalen FEZ aller Vorgänger eines Knotens
 	 * 
@@ -342,26 +302,6 @@ public class Controller {
 		}
 		return max;
 	}
-
-	// /**
-	// * Berechnet SEZ ausgehend von einem aktuellen Knoten
-	// *
-	// * @param aktKnoten
-	// * aktuell betrachteter Knoten
-	// */
-	// private void setSez(Knoten aktKnoten) {
-	// /*
-	// * Der SAZ eines Vorgangs wird SEZ aller unmittelbarer Vorgänger
-	// *
-	// * Haben mehrere Vorgänge einen gemeinsamen Vorgänger, so ist dessen SEZ der
-	// * früheste (kleinste) SAZ aller Nachfolger.
-	// **/
-	// aktKnoten.setSez(this.getMinSazOfNachfolger(aktKnoten));
-	//
-	// for (Knoten vorgaenger : aktKnoten.getVorgaenger()) {
-	// setSez(vorgaenger);
-	// }
-	// }
 
 	/**
 	 * Berechnet den minimalen SAZ der Nachfolgenden Knoten eines betrachteten
@@ -490,8 +430,6 @@ public class Controller {
 			for (Knoten nachfolger : aktKnoten.getNachfolger()) {
 				this.setKritischePfadeHelper(pfadKopie, nachfolger);
 			}
-			// // Entferne den zuletzt hinzugefügten Knoten aus dem Pfad-Array
-			// pfad.remove(pfad.size() - 1);
 		}
 	}
 
