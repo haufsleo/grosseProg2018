@@ -140,11 +140,11 @@ public abstract class Ausgabe {
 	}
 
 	/**
-	 * Gibt die Gesamtdauer des kritischen Pfades zurück. Sind mehrere Kritische
+	 * * Gibt die Gesamtdauer des kritischen Pfades zurück. Sind mehrere Kritische
 	 * Pfade enthalten, so wird "Nicht eindeutig" zurückgegeben
 	 * 
-	 * @return Gesamtdauer des kritischen Pfades. Sind mehrere Kritische Pfade
-	 *         enthalten, so wird "Nicht eindeutig" zurückgegeben
+	 * @param sb
+	 *            StringBuilder, an den der Gesamtdauerstring angehängt werden soll.
 	 */
 	private void getGesamtdauer(StringBuilder sb) {
 		sb.append("Gesamtdauer: ");
