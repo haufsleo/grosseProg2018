@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root text="&#34;setFp(Knoten aktKnoten): void&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;Setze aktKnoten.fp auf (minimales faz der Nachfolger von aktKnoten) - aktKnoten.fez&#34;" comment="" color="ffffff" rotated="0"></instruction>
+		<for text="&#34;Für jeden Knoten nachfolger in aktKnoten.nachfolger&#34;" comment="" color="ffffff">
+			<qFor>
+				<call text="&#34;setFp(nachfolger)&#34;" comment="" color="ffffff"></call>
+			</qFor>
+		</for>
+	</children>
+</root>

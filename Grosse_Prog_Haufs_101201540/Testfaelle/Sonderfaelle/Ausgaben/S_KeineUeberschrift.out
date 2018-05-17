@@ -1,0 +1,11 @@
+Vorgangsnummer; Vorgangsbeschreibung; D; FAZ; FEZ; SAZ; SEZ; GP; FP
+1; Problemanalyse; 2; 0; 2; 0; 2; 0; 0
+2; Grobplanung; 3; 2; 5; 2; 5; 0; 0
+3; Feinplanung; 3; 5; 8; 5; 8; 0; 0
+
+Anfangsvorgang: 1
+Endvorgang: 3
+Gesamtdauer: 8
+
+Kritischer Pfad
+1->2->3

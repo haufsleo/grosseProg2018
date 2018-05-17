@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>16</zoom_level>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>320</x>
+      <y>304</y>
+      <w>160</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>Knoten 1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>672</x>
+      <y>304</y>
+      <w>160</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>Knoten 2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>464</x>
+      <y>288</y>
+      <w>240</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>Nachfolger
+lt=&lt;-</panel_attributes>
+    <additional_attributes>130.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>464</x>
+      <y>320</y>
+      <w>240</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>Vorgänger
+lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;20.0;130.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>272</x>
+      <y>240</y>
+      <w>640</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>Vorgänger
+lt=&lt;-</panel_attributes>
+    <additional_attributes>350.0;60.0;380.0;60.0;380.0;20.0;10.0;20.0;10.0;60.0;30.0;60.0</additional_attributes>
+  </element>
+</diagram>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root text="&#34;setKritischePfadeHelper(List&#60;Knoten&#62; pfad, Knoten aktKnoten): void&#34;" comment="" color="ffffff" type="program" style="nice">
+	<children>
+		<alternative text="&#34;aktKnoten ist Endknoten&#34;,&#34;(aktKnoten.nachfolger hat Länge 0)&#34;" comment="" color="ffffff">
+			<qTrue>
+				<instruction text="&#34;Füge aktKnoten zu pfad hinzu&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Erstelle Kopie von pfad als pfadKopie&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Füge pfadKopie zu model.kritischePfade hinzu&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<jump text="&#34;Return&#34;" comment="" color="ffffff"></jump>
+			</qTrue>
+			<qFalse>
+			</qFalse>
+		</alternative>
+		<alternative text="&#34;aktKnoten.gp == 0 und &#34;,&#34;aktKnoten.fp == 0&#34;" comment="" color="ffffff">
+			<qTrue>
+				<instruction text="&#34;Erstelle Kopie von pfad als pfadKopie&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Füge aktKnoten zu pfadKopie hinzu&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<for text="&#34;Für jeden Knoten nachfolger in aktKnoten.nachfolger&#34;" comment="&#34;&#34;" color="ffffff">
+					<qFor>
+						<call text="&#34;setKritischePfadeHelper(pfadKopie, nachfolger)&#34;" comment="&#34;&#34;" color="ffffff"></call>
+					</qFor>
+				</for>
+			</qTrue>
+			<qFalse>
+			</qFalse>
+		</alternative>
+	</children>
+</root>

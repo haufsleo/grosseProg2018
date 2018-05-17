@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root text="&#34;getStartknoten(List&#60;Knoten&#62; knoten): List&#60;Knoten&#62; &#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;Initialisiere leere Liste von Knoten als startknoten &#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<for text="&#34;Für jeden Knoten k in knoten&#34;" comment="" color="ffffff">
+			<qFor>
+				<alternative text="&#34;knoten ist Startknoten&#34;,&#34;(knoten.vorgaenger ist leer)&#34;" comment="&#34;&#34;" color="ffffff">
+					<qTrue>
+						<instruction text="&#34;Füge k zu startknoten hinzu&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+					</qTrue>
+					<qFalse>
+					</qFalse>
+				</alternative>
+			</qFor>
+		</for>
+		<jump text="&#34;Return startknoten&#34;" comment="" color="ffffff"></jump>
+	</children>
+</root>

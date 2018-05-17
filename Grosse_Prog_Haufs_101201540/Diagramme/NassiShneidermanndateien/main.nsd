@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root text="&#34;main (Array args): void&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<alternative text="&#34;Länge von args != 2&#34;" comment="&#34;&#34;" color="ffffff">
+			<qTrue>
+				<instruction text="&#34;Fehlerausgabe (2 Parameter nötig)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+				<jump text="&#34;return&#34;" comment="&#34;&#34;" color="ffffff"></jump>
+			</qTrue>
+			<qFalse>
+			</qFalse>
+		</alternative>
+		<instruction text="&#34;dateiendung = args an Stelle 0&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;verzeichnis = args an Stelle 1&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<for text="&#34;für jede Datei mit Dateiendung= dateiendung im Verzeichnis = verzeichnis&#34;" comment="&#34;&#34;" color="ffffff">
+			<qFor>
+				<call text="&#34;Initialisiere neues LeseAusDatei-Objekt in&#34;" comment="&#34;&#34;" color="ffffff"></call>
+				<call text="&#34;model = in.getModelAusDatei(datei) &#34;" comment="&#34;&#34;" color="ffffff"></call>
+				<call text="&#34;Initialisiere neuen Controller(model) als c&#34;" comment="&#34;&#34;" color="ffffff"></call>
+				<call text="&#34;c.calculate()&#34;" comment="&#34;&#34;" color="ffffff"></call>
+				<call text="&#34;Initialisiere neues Objekt out vom Typ AusgabeAusDatei(model)&#34;" comment="&#34;&#34;" color="ffffff"></call>
+				<instruction text="&#34;outputpath = verzeichnis + dateiname + dateiendung .out&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+				<call text="&#34;out.schreibeModelInDatei(outputPath)&#34;" comment="&#34;&#34;" color="ffffff"></call>
+			</qFor>
+		</for>
+	</children>
+</root>

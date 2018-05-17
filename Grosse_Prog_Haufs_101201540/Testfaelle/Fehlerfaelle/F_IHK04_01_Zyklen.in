@@ -1,0 +1,10 @@
+//************************************************
+//+ Beispiel 4 mit Zyklus
+//************************************************
+//Vorgangsnummer; Vorgangsbezeichnung; Dauer; Vorgänger; Nachfolger
+1; Flughafen planen; 24; -; 2
+2; Flughafen bauen; 24; 1; 3
+3; Baumängel erkennen; 1; 2; 4
+4; Baumängel beseitigen; 6; 3; 3,5
+5; Flughafenbau abnehmen und genehmigen; 1; 4; 6
+6; Flugbetrieb aufnehmen; 1; 5; -

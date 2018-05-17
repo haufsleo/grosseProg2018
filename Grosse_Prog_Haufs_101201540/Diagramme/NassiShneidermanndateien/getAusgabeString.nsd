@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root text="&#34;getAusgabeString(): String&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;Initialisiere StringBuilder sb als neuen StringBuilder&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;Füge model.name an sb an&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<alternative text="&#34;model.knoten hat Länge 0&#34;" comment="&#34;&#34;" color="ffffff">
+			<qTrue>
+				<instruction text="&#34;Fehlerausgabe &#34;,&#34;an sb anhängen&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+			</qTrue>
+			<qFalse>
+				<alternative text="&#34;model.isZusammenhängend ist false&#34;" comment="&#34;&#34;" color="ffffff">
+					<qTrue>
+						<instruction text="&#34;Fehlerausgabe &#34;,&#34;nicht zusammenhängend&#34;,&#34;an sb anhängen&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+					</qTrue>
+					<qFalse>
+						<alternative text="&#34;model.zyklus hat die Länge größer 0&#34;" comment="&#34;&#34;" color="ffffff">
+							<qTrue>
+								<instruction text="&#34;Fehlerausgabe &#34;,&#34;zyklus erkannt&#34;,&#34;an sb anhängen&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+							</qTrue>
+							<qFalse>
+								<alternative text="&#34;model.isGueltigeReferenzen ist false&#34;" comment="&#34;&#34;" color="ffffff">
+									<qTrue>
+										<instruction text="&#34;Fehlerausgabe&#34;,&#34;Referenzen sind&#34;,&#34;ungültig &#34;,&#34;an sb anhängen&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+									</qTrue>
+									<qFalse>
+										<instruction text="&#34;Beschreibungsstring an sb anhängen&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+										<call text="&#34;getKnotenbeschreibung(sb)&#34;" comment="&#34;&#34;" color="ffffff"></call>
+										<call text="&#34;getVorgangString(sb)&#34;" comment="&#34;&#34;" color="ffffff"></call>
+										<call text="&#34;getGesamtdauer(sb)&#34;" comment="&#34;&#34;" color="ffffff"></call>
+										<call text="&#34;getKritischerPfadString(sb)&#34;" comment="&#34;&#34;" color="ffffff"></call>
+									</qFalse>
+								</alternative>
+							</qFalse>
+						</alternative>
+					</qFalse>
+				</alternative>
+			</qFalse>
+		</alternative>
+	</children>
+</root>

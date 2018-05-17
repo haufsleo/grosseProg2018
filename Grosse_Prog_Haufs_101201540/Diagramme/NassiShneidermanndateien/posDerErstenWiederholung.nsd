@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root text="&#34;posDerErstenWiederholung(ArrayList&#60;Knoten&#62; knoten):int&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;Initialisiere neue Liste ks von Knoten&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<for text="&#34;for i &#60;- 0 to Länge von knoten&#34;" comment="&#34;&#34;" color="ffffff">
+			<qFor>
+				<instruction text="&#34;Initialisiere neuen Knoten k als knoten an Position i&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+				<alternative text="&#34;ks enthält k&#34;" comment="&#34;&#34;" color="ffffff">
+					<qTrue>
+						<jump text="&#34;Return Position von k in ks&#34;" comment="&#34;&#34;" color="ffffff"></jump>
+					</qTrue>
+					<qFalse>
+					</qFalse>
+				</alternative>
+			</qFor>
+		</for>
+		<jump text="&#34;Return 0&#34;" comment="&#34;&#34;" color="ffffff"></jump>
+	</children>
+</root>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root text="&#34;calculate(): void&#34;" comment="" color="ffffff" type="program" style="nice">
+	<children>
+		<alternative text="&#34;hatKeineZyklen() == true ?&#34;" comment="" color="ffffff">
+			<qTrue>
+			</qTrue>
+			<qFalse>
+				<instruction text="&#34;Fehlerausgabe &#34;&#34;Zyklen enthalten&#34;&#34;&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<jump text="&#34;Abbruch der Funktion&#34;" comment="" color="ffffff"></jump>
+			</qFalse>
+		</alternative>
+		<alternative text="&#34;isZusammenhaengend() == true ?&#34;" comment="" color="ffffff">
+			<qTrue>
+			</qTrue>
+			<qFalse>
+				<instruction text="&#34;Fehlerausgabe &#34;&#34;Nicht zusammenhängend&#34;&#34;&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;setze zusammenhängend in model auf false&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<jump text="&#34;Abbruch der Funktion&#34;" comment="" color="ffffff"></jump>
+			</qFalse>
+		</alternative>
+		<alternative text="&#34;hatGueltigeReferenzen() == true ?&#34;" comment="" color="ffffff">
+			<qTrue>
+				<instruction text="&#34;setze gueltigeReferenzen in model auf true&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+			</qTrue>
+			<qFalse>
+				<instruction text="&#34;Fehlerausgabe &#34;&#34;Fehlerhafte Referenzen&#34;&#34;&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;setze gueltigeReferenzen in model auf false&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<jump text="&#34;Abbruch der Funktion&#34;" comment="" color="ffffff"></jump>
+			</qFalse>
+		</alternative>
+		<alternative text="&#34;model.isInitialized == true ?&#34;" comment="" color="ffffff">
+			<qTrue>
+			</qTrue>
+			<qFalse>
+				<call text="&#34;initModel()&#34;" comment="" color="ffffff"></call>
+			</qFalse>
+		</alternative>
+	</children>
+</root>

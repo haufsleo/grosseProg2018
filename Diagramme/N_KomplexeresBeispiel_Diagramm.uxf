@@ -4,195 +4,196 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>204</x>
-      <y>564</y>
+      <x>108</x>
+      <y>498</y>
       <w>54</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 Nr=1
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>204</x>
-      <y>576</y>
+      <x>108</x>
+      <y>510</y>
       <w>54</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 D=1
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>204</x>
-      <y>588</y>
+      <x>108</x>
+      <y>522</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 SAZ=0
-bg=light_gray</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>300</x>
-      <y>588</y>
-      <w>96</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-SEZ=1
-bg=light_gray</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>258</x>
-      <y>564</y>
-      <w>138</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-Infrastrukturbedarf ermitteln
-bg=light_gray</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>258</x>
-      <y>576</y>
-      <w>78</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-GP=0
-bg=light_gray
-fg=red</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
       <x>204</x>
-      <y>552</y>
+      <y>522</y>
+      <w>96</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+SEZ=1
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>162</x>
+      <y>498</y>
+      <w>138</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+Infrastrukturbedarf ermitteln
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>162</x>
+      <y>510</y>
+      <w>78</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+GP=0
+fg=red
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>108</x>
+      <y>486</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FAZ=0
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>240</x>
+      <y>510</y>
+      <w>60</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+FP=0
+fg=red
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>204</x>
+      <y>486</y>
+      <w>96</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+FEZ=1
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>294</x>
+      <y>516</y>
+      <w>54</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+fg=red
+bg=none</panel_attributes>
+    <additional_attributes>70.0;40.0;40.0;40.0;40.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>336</x>
+      <y>540</y>
+      <w>54</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+D=2
+group=18
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
       <x>336</x>
-      <y>576</y>
-      <w>60</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-FP=0
-bg=light_gray
-fg=red</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>300</x>
       <y>552</y>
-      <w>96</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-FEZ=1
-bg=light_gray</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>390</x>
-      <y>582</y>
-      <w>54</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-
-fg=red</panel_attributes>
-    <additional_attributes>70.0;40.0;40.0;40.0;40.0;10.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>432</x>
-      <y>606</y>
-      <w>54</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-D=2
-group=18
-bg=light_gray</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>432</x>
-      <y>618</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 SAZ=1
 group=18
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>528</x>
-      <y>618</y>
+      <x>432</x>
+      <y>552</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 SEZ=3
 group=18
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>486</x>
-      <y>594</y>
+      <x>390</x>
+      <y>528</y>
       <w>138</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 Arbeitsplatzbedarf ermitteln
 group=18
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>486</x>
-      <y>606</y>
+      <x>390</x>
+      <y>540</y>
       <w>78</w>
       <h>12</h>
     </coordinates>
@@ -200,28 +201,28 @@ bg=light_gray</panel_attributes>
 GP=0
 fg=red
 group=18
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>432</x>
-      <y>582</y>
+      <x>336</x>
+      <y>516</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FAZ=1
 group=18
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>564</x>
-      <y>606</y>
+      <x>468</x>
+      <y>540</y>
       <w>60</w>
       <h>12</h>
     </coordinates>
@@ -229,2204 +230,2236 @@ bg=light_gray</panel_attributes>
 FP=0
 fg=red
 group=18
-bg=light_gray</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>528</x>
-      <y>582</y>
-      <w>96</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-FEZ=3
-group=18
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
       <x>432</x>
-      <y>594</y>
+      <y>516</y>
+      <w>96</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+FEZ=3
+group=18
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>336</x>
+      <y>528</y>
       <w>54</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 Nr=2
 group=18
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>432</x>
-      <y>522</y>
+      <x>336</x>
+      <y>456</y>
       <w>54</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 Nr=3
 group=19
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>432</x>
-      <y>534</y>
+      <x>336</x>
+      <y>468</y>
       <w>54</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 D=1
 group=19
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>432</x>
-      <y>546</y>
+      <x>336</x>
+      <y>480</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 SAZ=6
 group=19
-bg=light_gray</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>528</x>
-      <y>546</y>
-      <w>96</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-SEZ=7
-group=19
-bg=light_gray</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>486</x>
-      <y>522</y>
-      <w>138</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-Netzwerkplan entwerfen
-group=19
-bg=light_gray</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>486</x>
-      <y>534</y>
-      <w>78</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-GP=5
-group=19
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
       <x>432</x>
-      <y>510</y>
+      <y>480</y>
+      <w>96</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+SEZ=7
+group=19
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>390</x>
+      <y>456</y>
+      <w>138</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+Netzwerkplan entwerfen
+group=19
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>390</x>
+      <y>468</y>
+      <w>78</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+GP=5
+group=19
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>336</x>
+      <y>444</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FAZ=1
 group=19
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>564</x>
-      <y>534</y>
+      <x>468</x>
+      <y>468</y>
       <w>60</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FP=0
 group=19
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>528</x>
-      <y>510</y>
+      <x>432</x>
+      <y>444</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FEZ=2
 group=19
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>672</x>
-      <y>564</y>
+      <x>576</x>
+      <y>498</y>
       <w>54</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 Nr=4
-bg=light_gray
-group=20</panel_attributes>
+group=20
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>672</x>
-      <y>576</y>
+      <x>576</x>
+      <y>510</y>
       <w>54</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 D=1
-bg=light_gray
-group=20</panel_attributes>
+group=20
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>672</x>
-      <y>588</y>
+      <x>576</x>
+      <y>522</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 SAZ=15
-bg=light_gray
-group=20</panel_attributes>
+group=20
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>768</x>
-      <y>588</y>
+      <x>672</x>
+      <y>522</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 SEZ=16
-bg=light_gray
-group=20</panel_attributes>
+group=20
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>726</x>
-      <y>564</y>
+      <x>630</x>
+      <y>498</y>
       <w>138</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 Peripheriebedarf ermitteln
-bg=light_gray
-group=20</panel_attributes>
+group=20
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>726</x>
-      <y>576</y>
+      <x>630</x>
+      <y>510</y>
       <w>78</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 GP=13
-bg=light_gray
-group=20</panel_attributes>
+group=20
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>672</x>
-      <y>552</y>
+      <x>576</x>
+      <y>486</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FAZ=2
-bg=light_gray
-group=20</panel_attributes>
+group=20
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>804</x>
-      <y>576</y>
+      <x>708</x>
+      <y>510</y>
       <w>60</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FP=0
-bg=light_gray
-group=20</panel_attributes>
+group=20
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>768</x>
-      <y>552</y>
+      <x>672</x>
+      <y>486</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FEZ=3
-bg=light_gray
-group=20</panel_attributes>
+group=20
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>672</x>
-      <y>492</y>
+      <x>576</x>
+      <y>426</y>
       <w>54</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 Nr=5
-bg=light_gray
-group=22</panel_attributes>
+group=22
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>672</x>
-      <y>504</y>
+      <x>576</x>
+      <y>438</y>
       <w>54</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 D=4
-bg=light_gray
-group=22</panel_attributes>
+group=22
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>672</x>
-      <y>516</y>
+      <x>576</x>
+      <y>450</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 SAZ=3
-bg=light_gray
-group=22</panel_attributes>
+group=22
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>768</x>
-      <y>516</y>
+      <x>672</x>
+      <y>450</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 SEZ=7
-bg=light_gray
-group=22</panel_attributes>
+group=22
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>726</x>
-      <y>492</y>
+      <x>630</x>
+      <y>426</y>
       <w>138</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 Hardware PC + Server beschaffen
-bg=light_gray
-group=22</panel_attributes>
+group=22
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>726</x>
-      <y>504</y>
+      <x>630</x>
+      <y>438</y>
       <w>78</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 GP=0
-bg=light_gray
 fg=red
-group=22</panel_attributes>
+group=22
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>672</x>
-      <y>480</y>
+      <x>576</x>
+      <y>414</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FAZ=3
-bg=light_gray
-group=22</panel_attributes>
+group=22
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>804</x>
-      <y>504</y>
+      <x>708</x>
+      <y>438</y>
       <w>60</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FP=0
-bg=light_gray
 fg=red
-group=22</panel_attributes>
+group=22
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>768</x>
-      <y>480</y>
+      <x>672</x>
+      <y>414</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FEZ=7
-bg=light_gray
-group=22</panel_attributes>
+group=22
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>672</x>
-      <y>624</y>
+      <x>576</x>
+      <y>558</y>
       <w>54</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 Nr=7
-bg=light_gray
-group=23</panel_attributes>
+group=23
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>672</x>
-      <y>636</y>
+      <x>576</x>
+      <y>570</y>
       <w>54</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 D=5
-bg=light_gray
-group=23</panel_attributes>
+group=23
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>672</x>
-      <y>648</y>
+      <x>576</x>
+      <y>582</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 SAZ=7
-bg=light_gray
-group=23</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>768</x>
-      <y>648</y>
-      <w>96</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-SEZ=12
-bg=light_gray
-group=23</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>726</x>
-      <y>624</y>
-      <w>138</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-Netzwerkzubehör beschaffen
-bg=light_gray
-group=23</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>726</x>
-      <y>636</y>
-      <w>78</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-GP=0
-bg=light_gray
-fg=red
-group=23</panel_attributes>
+group=23
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
       <x>672</x>
-      <y>612</y>
+      <y>582</y>
+      <w>96</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+SEZ=12
+group=23
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>558</y>
+      <w>138</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+Netzwerkzubehör beschaffen
+group=23
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>570</y>
+      <w>78</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+GP=0
+fg=red
+group=23
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>576</x>
+      <y>546</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FAZ=7
-bg=light_gray
-group=23</panel_attributes>
+group=23
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>804</x>
-      <y>636</y>
+      <x>708</x>
+      <y>570</y>
       <w>60</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FP=0
-bg=light_gray
 fg=red
-group=23</panel_attributes>
+group=23
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>768</x>
-      <y>612</y>
+      <x>672</x>
+      <y>546</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FEZ=12
-bg=light_gray
-group=23</panel_attributes>
+group=23
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>912</x>
-      <y>588</y>
+      <x>816</x>
+      <y>522</y>
       <w>54</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 Nr=8
 group=7
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>912</x>
-      <y>600</y>
+      <x>816</x>
+      <y>534</y>
       <w>54</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 D=1
 group=7
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>912</x>
-      <y>612</y>
+      <x>816</x>
+      <y>546</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 SAZ=16
 group=7
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1008</x>
-      <y>612</y>
+      <x>912</x>
+      <y>546</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 SEZ=17
 group=7
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>966</x>
-      <y>588</y>
+      <x>870</x>
+      <y>522</y>
       <w>138</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 Peripherie beschaffen
 group=7
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>966</x>
-      <y>600</y>
+      <x>870</x>
+      <y>534</y>
       <w>78</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 GP=13
 group=7
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>912</x>
-      <y>576</y>
+      <x>816</x>
+      <y>510</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FAZ=3
 group=7
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1044</x>
-      <y>600</y>
+      <x>948</x>
+      <y>534</y>
       <w>60</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FP=13
 group=7
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1008</x>
-      <y>576</y>
+      <x>912</x>
+      <y>510</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FEZ=4
 group=7
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>912</x>
-      <y>438</y>
+      <x>816</x>
+      <y>372</y>
       <w>54</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 Nr=9
 group=9
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>912</x>
-      <y>450</y>
+      <x>816</x>
+      <y>384</y>
       <w>54</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 D=6
 group=9
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>912</x>
-      <y>462</y>
+      <x>816</x>
+      <y>396</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 SAZ=8
 group=9
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1008</x>
-      <y>462</y>
+      <x>912</x>
+      <y>396</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 SEZ=14
 group=9
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>966</x>
-      <y>438</y>
+      <x>870</x>
+      <y>372</y>
       <w>138</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 Hardware PC + Server aufbauen
 group=9
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>966</x>
-      <y>450</y>
+      <x>870</x>
+      <y>384</y>
       <w>78</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 GP=1
 group=9
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>912</x>
-      <y>426</y>
+      <x>816</x>
+      <y>360</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FAZ=7
 group=9
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1044</x>
-      <y>450</y>
+      <x>948</x>
+      <y>384</y>
       <w>60</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FP=0
 group=9
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1008</x>
-      <y>426</y>
+      <x>912</x>
+      <y>360</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FEZ=13
 group=9
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1152</x>
-      <y>438</y>
+      <x>1056</x>
+      <y>372</y>
       <w>54</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 Nr=10
 group=13
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1152</x>
-      <y>450</y>
+      <x>1056</x>
+      <y>384</y>
       <w>54</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 D=3
 group=13
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1152</x>
-      <y>462</y>
+      <x>1056</x>
+      <y>396</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 SAZ=14
 group=13
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1248</x>
-      <y>462</y>
+      <x>1152</x>
+      <y>396</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 SEZ=17
 group=13
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1206</x>
-      <y>438</y>
+      <x>1110</x>
+      <y>372</y>
       <w>138</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 Server installieren
 group=13
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1206</x>
-      <y>450</y>
+      <x>1110</x>
+      <y>384</y>
       <w>78</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 GP
 group=13
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1152</x>
-      <y>426</y>
+      <x>1056</x>
+      <y>360</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FAZ=13
 group=13
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1284</x>
-      <y>450</y>
+      <x>1188</x>
+      <y>384</y>
       <w>60</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FP
 group=13
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1248</x>
-      <y>426</y>
+      <x>1152</x>
+      <y>360</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FEZ=16
 group=13
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>912</x>
-      <y>648</y>
+      <x>816</x>
+      <y>582</y>
       <w>54</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 Nr=11
-group=24</panel_attributes>
+group=24
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>912</x>
-      <y>660</y>
+      <x>816</x>
+      <y>594</y>
       <w>54</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 D=5
-group=24</panel_attributes>
+group=24
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>816</x>
+      <y>606</y>
+      <w>96</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+SAZ=12
+group=24
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
       <x>912</x>
-      <y>672</y>
-      <w>96</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-SAZ=12
-group=24</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1008</x>
-      <y>672</y>
+      <y>606</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 SEZ=17
-group=24</panel_attributes>
+group=24
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>966</x>
-      <y>648</y>
+      <x>870</x>
+      <y>582</y>
       <w>138</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 Netzwerk aufbauen
-group=24</panel_attributes>
+group=24
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>966</x>
-      <y>660</y>
+      <x>870</x>
+      <y>594</y>
       <w>78</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 GP=0
 fg=red
-group=24</panel_attributes>
+group=24
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>912</x>
-      <y>636</y>
+      <x>816</x>
+      <y>570</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FAZ=12
-group=24</panel_attributes>
+group=24
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1044</x>
-      <y>660</y>
+      <x>948</x>
+      <y>594</y>
       <w>60</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FP=0
 fg=red
-group=24</panel_attributes>
+group=24
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1008</x>
-      <y>636</y>
+      <x>912</x>
+      <y>570</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FEZ=17
-group=24</panel_attributes>
+group=24
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1152</x>
-      <y>516</y>
+      <x>1056</x>
+      <y>450</y>
       <w>54</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 Nr=12
 group=10
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1152</x>
-      <y>528</y>
+      <x>1056</x>
+      <y>462</y>
       <w>54</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 D=1
 group=10
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1152</x>
-      <y>540</y>
+      <x>1056</x>
+      <y>474</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 SAZ=18
 group=10
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1248</x>
-      <y>540</y>
+      <x>1152</x>
+      <y>474</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 SEZ=19
 group=10
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1206</x>
-      <y>516</y>
+      <x>1110</x>
+      <y>450</y>
       <w>138</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 PC-Image anlegen
 group=10
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1206</x>
-      <y>528</y>
+      <x>1110</x>
+      <y>462</y>
       <w>78</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 GP=1
 group=10
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1152</x>
-      <y>504</y>
+      <x>1056</x>
+      <y>438</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FAZ=17
 group=10
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1284</x>
+      <x>1188</x>
+      <y>462</y>
+      <w>60</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+FP=0
+group=10
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1152</x>
+      <y>438</y>
+      <w>96</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+FEZ=18
+group=10
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1056</x>
+      <y>522</y>
+      <w>54</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+Nr=13
+group=25
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1056</x>
+      <y>534</y>
+      <w>54</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+D=1
+group=25
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1056</x>
+      <y>546</y>
+      <w>96</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+SAZ=17
+group=25
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1152</x>
+      <y>546</y>
+      <w>96</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+SEZ=18
+group=25
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1110</x>
+      <y>522</y>
+      <w>138</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+Peripherie anschließen
+group=25
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1110</x>
+      <y>534</y>
+      <w>78</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+GP=0
+fg=red
+group=25
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1056</x>
+      <y>510</y>
+      <w>96</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+FAZ=17
+group=25
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1188</x>
+      <y>534</y>
+      <w>60</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+FP=0
+fg=red
+group=25
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1152</x>
+      <y>510</y>
+      <w>96</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+FEZ=18
+group=25
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1308</x>
+      <y>516</y>
+      <w>54</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+Nr=14
+group=26
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1308</x>
+      <y>528</y>
+      <w>54</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+D=2
+group=26
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1308</x>
+      <y>540</y>
+      <w>96</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+SAZ=18
+group=26
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1404</x>
+      <y>540</y>
+      <w>96</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+SEZ=20
+group=26
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1362</x>
+      <y>516</y>
+      <w>138</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+Netzwerkplan dokumentieren
+group=26
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1362</x>
+      <y>528</y>
+      <w>78</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+GP=0
+fg=red
+group=26
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1308</x>
+      <y>504</y>
+      <w>96</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+FAZ=18
+group=26
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1440</x>
       <y>528</y>
       <w>60</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FP=0
-group=10
-bg=light_gray</panel_attributes>
+fg=red
+group=26
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1248</x>
+      <x>1404</x>
       <y>504</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
-FEZ=18
-group=10
-bg=light_gray</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1152</x>
-      <y>588</y>
-      <w>54</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-Nr=13
-bg=light_gray
-group=25</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1152</x>
-      <y>600</y>
-      <w>54</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-D=1
-bg=light_gray
-group=25</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1152</x>
-      <y>612</y>
-      <w>96</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-SAZ=17
-bg=light_gray
-group=25</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1248</x>
-      <y>612</y>
-      <w>96</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-SEZ=18
-bg=light_gray
-group=25</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1206</x>
-      <y>588</y>
-      <w>138</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-Peripherie anschließen
-bg=light_gray
-group=25</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1206</x>
-      <y>600</y>
-      <w>78</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-GP=0
-bg=light_gray
-fg=red
-group=25</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1152</x>
-      <y>576</y>
-      <w>96</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-FAZ=17
-bg=light_gray
-group=25</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1284</x>
-      <y>600</y>
-      <w>60</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-FP=0
-bg=light_gray
-fg=red
-group=25</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1248</x>
-      <y>576</y>
-      <w>96</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-FEZ=18
-bg=light_gray
-group=25</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1404</x>
-      <y>582</y>
-      <w>54</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-Nr=14
-bg=light_gray
-group=26</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1404</x>
-      <y>594</y>
-      <w>54</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-D=2
-bg=light_gray
-group=26</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1404</x>
-      <y>606</y>
-      <w>96</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-SAZ=18
-bg=light_gray
-group=26</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1500</x>
-      <y>606</y>
-      <w>96</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-SEZ=20
-bg=light_gray
-group=26</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1458</x>
-      <y>582</y>
-      <w>138</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-Netzwerkplan dokumentieren
-bg=light_gray
-group=26</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1458</x>
-      <y>594</y>
-      <w>78</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-GP=0
-bg=light_gray
-fg=red
-group=26</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1404</x>
-      <y>570</y>
-      <w>96</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-FAZ=18
-bg=light_gray
-group=26</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1536</x>
-      <y>594</y>
-      <w>60</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-FP=0
-bg=light_gray
-fg=red
-group=26</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1500</x>
-      <y>570</y>
-      <w>96</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
 FEZ=20
-bg=light_gray
-group=26</panel_attributes>
+group=26
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1404</x>
-      <y>438</y>
+      <x>1308</x>
+      <y>372</y>
       <w>54</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 Nr=15
-bg=light_gray
-group=27</panel_attributes>
+group=27
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1404</x>
-      <y>450</y>
+      <x>1308</x>
+      <y>384</y>
       <w>54</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 D=1
-bg=light_gray
-group=27</panel_attributes>
+group=27
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1404</x>
-      <y>462</y>
+      <x>1308</x>
+      <y>396</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 SAZ=19
-bg=light_gray
-group=27</panel_attributes>
+group=27
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1500</x>
-      <y>462</y>
+      <x>1404</x>
+      <y>396</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 SEZ=20
-bg=light_gray
-group=27</panel_attributes>
+group=27
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1458</x>
-      <y>438</y>
+      <x>1362</x>
+      <y>372</y>
       <w>138</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 Server-Image anlegen
-bg=light_gray
-group=27</panel_attributes>
+group=27
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1458</x>
-      <y>450</y>
+      <x>1362</x>
+      <y>384</y>
       <w>78</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 GP=3
-bg=light_gray
-group=27</panel_attributes>
+group=27
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1404</x>
-      <y>426</y>
+      <x>1308</x>
+      <y>360</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FAZ=16
-bg=light_gray
-group=27</panel_attributes>
+group=27
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1536</x>
-      <y>450</y>
+      <x>1440</x>
+      <y>384</y>
       <w>60</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FP=3
-bg=light_gray
-group=27</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1500</x>
-      <y>426</y>
-      <w>96</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-FEZ=17
-bg=light_gray
-group=27</panel_attributes>
+group=27
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
       <x>1404</x>
-      <y>516</y>
+      <y>360</y>
+      <w>96</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+FEZ=17
+group=27
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1308</x>
+      <y>450</y>
       <w>54</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 Nr=16
 group=16
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1404</x>
-      <y>528</y>
+      <x>1308</x>
+      <y>462</y>
       <w>54</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 D=1
 group=16
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1404</x>
-      <y>540</y>
+      <x>1308</x>
+      <y>474</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 SAZ=19
 group=16
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1500</x>
-      <y>540</y>
+      <x>1404</x>
+      <y>474</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 SEZ=20
 group=16
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1458</x>
-      <y>516</y>
+      <x>1362</x>
+      <y>450</y>
       <w>138</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 PC-Remote installieren
 group=16
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1458</x>
-      <y>528</y>
+      <x>1362</x>
+      <y>462</y>
       <w>78</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 GP=1
 group=16
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1404</x>
-      <y>504</y>
+      <x>1308</x>
+      <y>438</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FAZ=18
 group=16
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1536</x>
-      <y>528</y>
+      <x>1440</x>
+      <y>462</y>
       <w>60</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FP=1
 group=16
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1500</x>
-      <y>504</y>
+      <x>1404</x>
+      <y>438</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FEZ=19
 group=16
-bg=light_gray</panel_attributes>
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>390</x>
-      <y>528</y>
+      <x>294</x>
+      <y>462</y>
       <w>54</w>
       <h>60</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-fg=black</panel_attributes>
+fg=black
+bg=none</panel_attributes>
     <additional_attributes>70.0;10.0;40.0;10.0;40.0;80.0;10.0;80.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>618</x>
-      <y>498</y>
+      <x>522</x>
+      <y>432</y>
       <w>66</w>
       <h>102</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-fg=red</panel_attributes>
+fg=red
+bg=none</panel_attributes>
     <additional_attributes>90.0;10.0;50.0;10.0;50.0;150.0;10.0;150.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>618</x>
-      <y>546</y>
+      <x>522</x>
+      <y>480</y>
       <w>66</w>
       <h>42</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-fg=black</panel_attributes>
+fg=black
+bg=none</panel_attributes>
     <additional_attributes>90.0;50.0;60.0;50.0;60.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>858</x>
-      <y>570</y>
+      <x>762</x>
+      <y>504</y>
       <w>66</w>
       <h>42</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-fg=black</panel_attributes>
+fg=black
+bg=none</panel_attributes>
     <additional_attributes>90.0;50.0;40.0;50.0;40.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>858</x>
-      <y>498</y>
+      <x>762</x>
+      <y>432</y>
       <w>66</w>
       <h>30</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-fg=black</panel_attributes>
+fg=black
+bg=none</panel_attributes>
     <additional_attributes>90.0;30.0;60.0;30.0;60.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>858</x>
-      <y>516</y>
+      <x>762</x>
+      <y>450</y>
       <w>48</w>
       <h>120</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-fg=red</panel_attributes>
+fg=red
+bg=none</panel_attributes>
     <additional_attributes>10.0;180.0;60.0;180.0;60.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>858</x>
-      <y>444</y>
+      <x>762</x>
+      <y>378</y>
       <w>66</w>
       <h>60</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-fg=black</panel_attributes>
+fg=black
+bg=none</panel_attributes>
     <additional_attributes>90.0;10.0;60.0;10.0;60.0;80.0;10.0;80.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1098</x>
-      <y>516</y>
+      <x>1002</x>
+      <y>450</y>
       <w>66</w>
       <h>18</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-fg=black</panel_attributes>
+fg=black
+bg=none</panel_attributes>
     <additional_attributes>90.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>858</x>
-      <y>636</y>
+      <x>762</x>
+      <y>570</y>
       <w>66</w>
       <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-fg=red</panel_attributes>
+fg=red
+bg=none</panel_attributes>
     <additional_attributes>90.0;40.0;60.0;40.0;60.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1098</x>
-      <y>594</y>
+      <x>1002</x>
+      <y>528</y>
       <w>66</w>
       <h>18</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-fg=black</panel_attributes>
+fg=black
+bg=none</panel_attributes>
     <additional_attributes>90.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1098</x>
-      <y>444</y>
+      <x>1002</x>
+      <y>378</y>
       <w>66</w>
       <h>18</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-fg=black</panel_attributes>
+fg=black
+bg=none</panel_attributes>
     <additional_attributes>90.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1338</x>
-      <y>456</y>
+      <x>1242</x>
+      <y>390</y>
       <w>36</w>
       <h>78</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-fg=black</panel_attributes>
+fg=black
+bg=none</panel_attributes>
     <additional_attributes>10.0;110.0;40.0;110.0;40.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1338</x>
-      <y>450</y>
+      <x>1242</x>
+      <y>384</y>
       <w>42</w>
       <h>162</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-fg=black</panel_attributes>
+fg=black
+bg=none</panel_attributes>
     <additional_attributes>10.0;250.0;50.0;250.0;50.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1338</x>
-      <y>444</y>
+      <x>1242</x>
+      <y>378</y>
       <w>78</w>
       <h>18</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-fg=black</panel_attributes>
+fg=black
+bg=none</panel_attributes>
     <additional_attributes>110.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1098</x>
-      <y>534</y>
+      <x>1002</x>
+      <y>468</y>
       <w>66</w>
       <h>138</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-fg=black</panel_attributes>
+fg=black
+bg=none</panel_attributes>
     <additional_attributes>90.0;10.0;30.0;10.0;30.0;210.0;10.0;210.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1098</x>
-      <y>606</y>
+      <x>1002</x>
+      <y>540</y>
       <w>66</w>
       <h>78</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-fg=red</panel_attributes>
+fg=red
+bg=none</panel_attributes>
     <additional_attributes>90.0;10.0;40.0;10.0;40.0;110.0;10.0;110.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1338</x>
-      <y>606</y>
+      <x>1242</x>
+      <y>540</y>
       <w>78</w>
       <h>18</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-fg=red</panel_attributes>
+fg=red
+bg=none</panel_attributes>
     <additional_attributes>110.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1404</x>
-      <y>654</y>
+      <x>1308</x>
+      <y>588</y>
       <w>54</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 Nr=17
-bg=light_gray
-group=28</panel_attributes>
+group=28
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1404</x>
-      <y>666</y>
+      <x>1308</x>
+      <y>600</y>
       <w>54</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 D=3
-bg=light_gray
-group=28</panel_attributes>
+group=28
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1404</x>
-      <y>678</y>
+      <x>1308</x>
+      <y>612</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 SAZ=20
-bg=light_gray
-group=28</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1500</x>
-      <y>678</y>
-      <w>96</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-SEZ=23
-bg=light_gray
-group=28</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1458</x>
-      <y>654</y>
-      <w>138</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-Gesamtdokumentation erstellen
-bg=light_gray
-group=28</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1458</x>
-      <y>666</y>
-      <w>78</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-GP=0
-bg=light_gray
-fg=red
-group=28</panel_attributes>
+group=28
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
       <x>1404</x>
-      <y>642</y>
+      <y>612</y>
+      <w>96</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+SEZ=23
+group=28
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1362</x>
+      <y>588</y>
+      <w>138</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+Gesamtdokumentation erstellen
+group=28
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1362</x>
+      <y>600</y>
+      <w>78</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+GP=0
+fg=red
+group=28
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1308</x>
+      <y>576</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FAZ=20
-bg=light_gray
-group=28</panel_attributes>
+group=28
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1536</x>
-      <y>666</y>
+      <x>1440</x>
+      <y>600</y>
       <w>60</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FP=0
-bg=light_gray
 fg=red
-group=28</panel_attributes>
+group=28
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1500</x>
-      <y>642</y>
+      <x>1404</x>
+      <y>576</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FEZ=23
-bg=light_gray
-group=28</panel_attributes>
+group=28
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1590</x>
-      <y>444</y>
+      <x>1494</x>
+      <y>378</y>
       <w>42</w>
       <h>246</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-fg=black</panel_attributes>
+fg=black
+bg=none</panel_attributes>
     <additional_attributes>10.0;390.0;50.0;390.0;50.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1590</x>
-      <y>510</y>
+      <x>1494</x>
+      <y>444</y>
       <w>36</w>
       <h>168</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-fg=black</panel_attributes>
+fg=black
+bg=none</panel_attributes>
     <additional_attributes>10.0;260.0;40.0;260.0;40.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>618</x>
-      <y>534</y>
+      <x>522</x>
+      <y>468</y>
       <w>66</w>
       <h>96</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-fg=black</panel_attributes>
+fg=black
+bg=none</panel_attributes>
     <additional_attributes>90.0;140.0;40.0;140.0;40.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1338</x>
-      <y>528</y>
+      <x>1242</x>
+      <y>462</y>
       <w>78</w>
       <h>18</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-fg=black</panel_attributes>
+fg=black
+bg=none</panel_attributes>
     <additional_attributes>110.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1590</x>
-      <y>588</y>
+      <x>1494</x>
+      <y>522</y>
       <w>30</w>
       <h>78</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-fg=red</panel_attributes>
+fg=red
+bg=none</panel_attributes>
     <additional_attributes>10.0;110.0;30.0;110.0;30.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>618</x>
-      <y>528</y>
+      <x>522</x>
+      <y>462</y>
       <w>306</w>
       <h>72</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-fg=black</panel_attributes>
+fg=black
+bg=none</panel_attributes>
     <additional_attributes>490.0;100.0;470.0;100.0;470.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>912</x>
-      <y>510</y>
+      <x>816</x>
+      <y>444</y>
       <w>54</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 Nr=6
-bg=light_gray
-group=21</panel_attributes>
+group=21
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>912</x>
-      <y>522</y>
+      <x>816</x>
+      <y>456</y>
       <w>54</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 D=5
-bg=light_gray
-group=21</panel_attributes>
+group=21
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>912</x>
-      <y>534</y>
+      <x>816</x>
+      <y>468</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 SAZ=16
-bg=light_gray
-group=21</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1008</x>
-      <y>534</y>
-      <w>96</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-SEZ=18
-bg=light_gray
-group=21</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>966</x>
-      <y>510</y>
-      <w>138</w>
-      <h>12</h>
-    </coordinates>
-    <panel_attributes>halign=center
-Software beschaffen
-bg=light_gray
-group=21</panel_attributes>
+group=21
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
       <x>912</x>
-      <y>498</y>
+      <y>468</y>
+      <w>96</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+SEZ=18
+group=21
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>870</x>
+      <y>444</y>
+      <w>138</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>halign=center
+Software beschaffen
+group=21
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>816</x>
+      <y>432</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FAZ=9
-bg=light_gray
-group=21</panel_attributes>
+group=21
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1044</x>
-      <y>522</y>
+      <x>948</x>
+      <y>456</y>
       <w>60</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FP=8
-bg=light_gray
-group=21</panel_attributes>
+group=21
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1008</x>
-      <y>498</y>
+      <x>912</x>
+      <y>432</y>
       <w>96</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 FEZ=9
-bg=light_gray
-group=21</panel_attributes>
+group=21
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>966</x>
-      <y>522</y>
+      <x>870</x>
+      <y>456</y>
       <w>78</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 GP=9
-bg=light_gray
-group=21</panel_attributes>
+group=21
+bg=none</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
